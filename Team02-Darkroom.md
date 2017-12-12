@@ -2,9 +2,9 @@
 ## Members
  Name | ID | github
 |---- | ----| ----------
-|郭振江|PB15030776  |ExquisiteFunction  
 |施泽丰 |PB14210224 | shiuang  
 |钟  立 |PB15000037 |FloridSleeves  
+|郭振江|PB15030776  |ExquisiteFunction  
 
 ## Introduction
 Darkroom是基于Terra的用于描述图片处理流水线的语言，能够对图片进行一些快速的变换，如模糊，锐化，卷积等。
