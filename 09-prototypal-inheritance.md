@@ -1,5 +1,12 @@
 # Project Description of Prototypal Inheritance 
->Group 09 王子博 王嵩超 安鸣霄
+
+## Group Members
+|Name|Github Account|
+|:-:|:-:|
+|王子博|Smart-Hypercube|
+|王嵩超|songchaow|
+|安鸣霄|nvagus|
+
 
 Visit [our organization](https://github.com/compiler-teamwork-group09) for this projects's codes and docs.
 
