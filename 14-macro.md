@@ -6,8 +6,8 @@
 ## 组员（Github ID)
 
 * 鲁吴越（Robert-Lu）
-* 李双利（ypluo）
-* 罗永平（agave233）
+* 李双利（agave233）
+* 罗永平（ypluo）
 
 ## 项目简介
  
