@@ -1,7 +1,7 @@
 ## Team 13-NNVM Compiler
 
 ### 小组成员:
-朱一鸣(suncio)， 谢筠庭(MiroBamboo)， 林郅琦(ralzq01)
+朱一铭(suncio)， 谢筠庭(MiroBamboo)， 林郅琦(ralzq01)
 
 ### 项目简介：
 * NNVM 编译器是用于中间计算图表示和优化计算图的一种工具，建立在 TVM 堆栈的两个组成的基础上：用于计算图的 NNVM (狭义 NNVM)，和用于张量计算的 TVM。
