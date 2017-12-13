@@ -28,3 +28,4 @@ In this project, we will do a small research on XLA, which covers in
 
 [XLA - TensorFlow 编译器](http://developers.googleblog.cn/2017/03/xla-tensorflow.html)
 
+[XLA Source Code](https://github.com/TensorflowXLABeginner/tensorflow/tree/master/tensorflow/compiler/xla)
