@@ -1,6 +1,6 @@
 # 07-Halide
 
-## 组员：
+## 组员
 
 |Name|GitHub ID|
 |:-:|:-:|
