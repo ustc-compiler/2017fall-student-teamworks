@@ -1,7 +1,11 @@
 # Concepts
 
 成员：
-李嘉豪（队长），袁牧，毕昊阳
+|姓名|Github 账户|
+|:-:|:-:|
+|李嘉豪|gloit042|
+|袁牧|Alexyuanmu|
+|毕昊阳|AyiStar|
 
 ## 简介
 
