@@ -2,7 +2,7 @@
 
 ### 小组成员：
 
-陈泳舟(elvinlife)，刑宇(xyyimian)，庄涛(Ubpa)
+陈泳舟(elvinlife)，邢宇(xyyimian)，庄涛(Ubpa)
 
 ### 项目简介：
 
