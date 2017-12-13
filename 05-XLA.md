@@ -2,7 +2,7 @@
 
 ## Project link
 
-
+https://github.com/TensorflowXLABeginner/2017fall-student-teamworks
 
 ### Group Members
 
@@ -14,10 +14,17 @@
 
 ## Introduction
 
-**XLA** (Accelerated Linear Algebra) is a domain-specific compiler for linear algebra that optimizes TensorFlow computations. The results are improvements in speed, memory usage, and portability on server and mobile platforms. Users can use XLA via JIT(just-in-time) compilation or AOT(ahead-of-time) compilation.
+**XLA** (Accelerated Linear Algebra)([github](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/compiler)) is a domain-specific compiler for linear algebra that optimizes TensorFlow computations. The results are improvements in speed, memory usage, and portability on server and mobile platforms. Users can use XLA via JIT (just-in-time) compilation or AOT (ahead-of-time) compilation.
 
 In this project, we will do a small research on XLA, which covers in
 
 * What kind of acceleration can XLA do
 * How does XLA do it
 * Where does JIT and AOT came in
+
+## Reference
+
+[XLA Overview](https://www.tensorflow.org/performance/xla/)
+
+[XLA - TensorFlow 编译器](http://developers.googleblog.cn/2017/03/xla-tensorflow.html)
+
