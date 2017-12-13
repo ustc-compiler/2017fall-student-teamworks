@@ -18,6 +18,9 @@ In this project, we will do a simple survey on the phenomenon of Protocol Inheri
 - Concepts of Protocol Inheritance
 - Genesis(origin) of prototype-based programming model
 
-  This includes concepts from `Frame Theory`.
-- The embodiment of prototype inheritance in several programming languages(such as `JavaScript` and `Python`) and their usages
-- The implementation insights we've found in some languages using Protocol Inheritance.
+  We will discuss the design ideas that Prototype-based Programming has adopted, including `delegation`, `extension` and other concepts from `Frame Theory` and a small language called `Actor`.
+- The benefits of Protocol Inheritance towards programmers
+- The embodiment of prototype inheritance in several programming languages(such as `JavaScript`) and their usages
+- The implementation of Prototype Inheritance we'll try on `Python`.
+  
+  Though `Python` itself already has some properties of Prototype Inheritance(e.g. we can dynamically add attributes to an object instantiated from a class), We plan to implement a Prototype Inheritance system that does not require our own definition of classes, providing full-featured interfaces without resort of classes via Python's decorators.
