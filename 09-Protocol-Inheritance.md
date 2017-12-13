@@ -1,6 +1,10 @@
 # Project Description of Protocol Inheritance 
 >Group 09 王子博 王嵩超 安鸣霄
+
+Visit [our organization](https://github.com/compiler-teamwork-group09) for this projects's codes and docs.
+
 ## Overview
+
 Much different from Class-based Inheritance, as a style of object-oriented programming, Protocol Inheritance provides a novel approach of reusing data.
 
 **Here's a quick view of the phenomenon:**
@@ -22,5 +26,5 @@ In this project, we will do a simple survey on the phenomenon of Protocol Inheri
 - The benefits of Protocol Inheritance towards programmers
 - The embodiment of prototype inheritance in several programming languages(such as `JavaScript`) and their usages
 - The implementation of Prototype Inheritance we'll try on `Python`.
-  
+
   Though `Python` itself already has some properties of Prototype Inheritance(e.g. we can dynamically add attributes to an object instantiated from a class), We plan to implement a Prototype Inheritance system that does not require our own definition of classes, providing full-featured interfaces without resort of classes via Python's decorators.
