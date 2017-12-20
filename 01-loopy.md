@@ -27,15 +27,31 @@ Loo.py是一个内嵌于Python的编程系统，包含基于数组等数据模�
 
 - Loo.py编程系统的实现方式
 
+Loo.py和一般的代码生成器的主要区别；和传统编译器的比较以及优劣分析
+
 - 多面体模型分析
+
+多面体模型如何表示程序；和抽象语法树的对比；应用场景
 
 - Loo.py在TVM中的应用
 
+TVM简介；TVM在什么层面参考了Loo.py
+
 - Loo.py的示例实现
+
+使用Loo.py编写测试样例；测试样例的CPU，GPU实现
 
 - 加速比量化分析
 
+发布Docker容器；在不同平台上进行测试；分析加速比
+
 ## 讨论记录
+
+### 12.20
+
+地点：西区图书馆；15分钟
+
+讨论项目内容的重点和具体需要完成的任务，计划在下次讨论时确定每个人的分工以及任务需要完成到什么程度。
 
 ## 进展记录
 
@@ -43,13 +59,21 @@ Loo.py是一个内嵌于Python的编程系统，包含基于数组等数据模�
 
 添加项目简介，完成初次提交。
 
+### 12.20
+
+深入讨论项目内容，具体列出任务规划
+
 ## 问题记录
+
+- 多面体模型的具体解释以及示例
 
 ## 待办清单
 
 阅读参考文献并讨论
 
 分析组员熟悉和擅长的方向，确定具体分工
+
+安装Python以及Loo.py的相关包
 
 ## 引用
 
@@ -63,4 +87,6 @@ Loo.py是一个内嵌于Python的编程系统，包含基于数组等数据模�
 
 [Docker example]() Work in progress
 
+[Official Loo.py git repository](https://github.com/inducer/loopy)
 
+[Documentation for Loo.py](https://documen.tician.de/loopy/)
