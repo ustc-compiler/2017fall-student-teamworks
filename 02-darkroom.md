@@ -1,7 +1,7 @@
 # Team 02-Darkroom
 ## Members
- Name   | identity| ID        | github                                                                                    
-|----   |--------   |----      |------                                                                                    
+|Name   | identity| ID        | github                                                                                    
+|----|--------|----|------                                                                                    
 |施泽丰 | 组员 | PB14210224 | [shiuang](https://github.com/orgs/Compiler-02/people/shiuang)                              
 |钟  立 | 组长 | PB15000037 | [FloridSleeves](https://github.com/orgs/Compiler-02/people/FloridSleeves)                 
 |郭振江 | 组员 | PB15030776 | [ExquisiteFunction](https://github.com/ExquisiteFunction/darkroom/commits/master/report.md?author=ExquisiteFunction)
