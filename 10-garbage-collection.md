@@ -28,21 +28,18 @@ WikiPedia 对 Garbage Collection 的定义如下:
 ### 4. 12月23日提交
 **任务和分工**  
 已经完成了之前制定的任务计划：调研若干个经典算法，以及JAVA中GC的算法使用情况。具体完成效果如下：  
-齐炜祯：调研GC复制算法、标记压缩法、增量式垃圾回收算法  
-[调研结果链接](https://github.com/USTC-Compiler-H-Team-10/teamwork/blob/master/Algotirhms.md)  
-黄一凡：调研GC算法：GC标记-清除算法、引用计数法、分代垃圾回收  
-[调研结果链接](https://github.com/USTC-Compiler-H-Team-10/teamwork/blob/master/Algorithm%20by%20Fan.md)  
-金泽文：调研JVM中GC算法的使用  
-[调研结果链接](https://github.com/USTC-Compiler-H-Team-10/teamwork/blob/master/notes_for_JVM.md)
+齐炜祯：[调研GC复制算法、标记压缩法、增量式垃圾回收算法](https://github.com/USTC-Compiler-H-Team-10/teamwork/blob/master/Algotirhms.md)  
+黄一凡：调研GC算法：[GC标记-清除算法、引用计数法、分代垃圾回收](https://github.com/USTC-Compiler-H-Team-10/teamwork/blob/master/Algorithm%20by%20Fan.md)  
+金泽文：[调研JVM中GC算法的使用](https://github.com/USTC-Compiler-H-Team-10/teamwork/blob/master/notes_for_JVM.md)
 
 **讨论记录**  
-**12.23**QQ群30分钟 + 图书馆四楼讨论区；40分钟  
+**12.23**QQ群: 30分钟 + 图书馆四楼讨论区: 40分钟  
 第一阶段的任务已经完成；  
 分享各自学习心得；  
 讨论制定接下来的目标和计划  
-**12.14**QQ群；40分钟  
+**12.14**QQ群: 40分钟  
 交流了各自找到的资料；具体分配任务。  
-**12.13**QQ群；40分钟  
+**12.13**QQ群: 40分钟  
 确定课题，开始准备。  
 
 **进展记录及问题**  
@@ -59,3 +56,5 @@ WikiPedia 对 Garbage Collection 的定义如下:
 
 **文献及引用和参考链接**  
 若干GC分析博客  
+[《垃圾回收的算法与实现》 【日】 中村成洋 相川光](https://www.amazon.cn/dp/B01JZS0AO8 )  
+[JVM的GC相关内容](https://javapapers.com/java/how-java-garbage-collection-works)
