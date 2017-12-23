@@ -31,17 +31,17 @@ Common: Install and run the example of darkroom; read the related publication to
  Division of team work
  
 ## Progress
-**10.07-10.12
+**10.07-10.12**
 
 Choose the research topic
 
-**10.12-11.28
+**10.12-11.28**
 
 Install Darkroom and the dependencies(lua,terra，llvm...)
 
 Read the related publication.
 
-**12.09-12.23
+**12.09-12.23**
 
 Report writing
 
