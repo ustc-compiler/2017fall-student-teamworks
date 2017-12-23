@@ -17,9 +17,15 @@ C++的一个扩展: concepts。项目的主要内容包括:
 - [Haskell中的type class](https://github.com/ustc-compiler-concepts/report/blob/master/type-class-in-haskell.md)
 - [concepts作为编程范式](https://github.com/ustc-compiler-concepts/report/blob/master/concepts-in-generic-programming.md)
 
+## 项目分工
+
+*   李嘉豪: concepts应用、文档整理与综合
+*   袁牧: concepts实现机制
+*   毕昊阳: 模板元编程实现、concepts和其他语言对比
+
 ## 进展
 
-#### 12月23日
+#### 总体进展
 
 在这段时间里，我们基本上完成了对concepts的研究，并编写了文档。
 
@@ -32,6 +38,25 @@ C++的一个扩展: concepts。项目的主要内容包括:
 最后，我们在[concepts作为编程范式](https://github.com/ustc-compiler-concepts/report/blob/master/concepts-in-generic-programming.md)中讨论了concepts出现后可以应用的编程范式，以及它所带来的便利。
 
 下一步我们会同其它组的成员互相交流和评价，以便进一步完善报告。也欢迎各位同学用任何方式来提出改进意见。
+
+#### 12月23日
+
+改进了公共页面的说明
+
+#### 12月7日
+
+讨论组里进行了讨论，大家都基本完成了学习任务，并认为可以开始文档编写，
+于是在github上建立了组织。在此之后就进行了文档编写。
+
+#### 11月2日
+
+课后进行了讨论。每个人都分享了自己对concepts的了解，然后分享了找到的资料。
+讨论中，我们还得出了报告需要关注的一些重点，确定接下来以这些重点为中心进行
+更进一步的了解。
+
+#### 10月12日
+
+课后进行了讨论，确定了学习计划，并确定了分工。
 
 ## 项目链接
 
