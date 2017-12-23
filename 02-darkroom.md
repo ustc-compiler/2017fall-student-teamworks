@@ -12,19 +12,17 @@ Darkroom is a language and compiler for image processing embedded in Terra. It a
 Our group dive into the principle of Darkroom, doing research on the programming model of Darkroom and the strategy of Darkroom to optimize the performance of program in ASIC, FPGA and CPU. 
 
 ## Task  
-施泽丰
+**施泽丰**
 
 Programming model of Darkroom
 
-pipeline buffer
+Pipeline buffer
 
-shift operator
+Shift operator
 
-schedule strategy of Darkroom
+Schedule strategy model of Darkroom
 
-钟立
-
-Relevant work including:
+**钟立**
 
 Halide
 
@@ -32,9 +30,9 @@ DSP
 
 SDF
 
-And background knowledge(ISP...)
+Background knowledge(ISP...)
 
-郭振江
+**郭振江**
 
 Implementation of Darkroom on ASIC, FPGA and CPU
 
@@ -46,7 +44,7 @@ Optimization result
 
 Install and run the example of darkroom
 
-read the related publication to get the basic concepts of Darkroom.
+Read the related publication to get the basic concepts of Darkroom.
 
 ## Discussion
 * 10.12
