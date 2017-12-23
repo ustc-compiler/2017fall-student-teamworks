@@ -36,13 +36,13 @@ WikiPedia 对 Garbage Collection 的定义如下:
 [调研结果链接](https://github.com/USTC-Compiler-H-Team-10/teamwork/blob/master/notes_for_JVM.md)
 
 **讨论记录**  
-***12.23***图书馆四楼讨论区；40分钟  
+**12.23**图书馆四楼讨论区；40分钟  
 第一阶段的任务已经完成；  
 分享各自学习心得；  
 讨论制定接下来的目标和计划  
-***12.14***QQ群；20分钟  
+**12.14**QQ群；20分钟  
 交流了各自找到的资料；具体分配任务。  
-***12.13***QQ群；20分钟  
+**12.13**QQ群；20分钟  
 确定课题，开始准备。  
 
 **进展记录及问题**  
@@ -54,10 +54,8 @@ WikiPedia 对 Garbage Collection 的定义如下:
 1. 尝试探索JVM源码，分配任务阅读JVM的GC源码；
 2. 如果有可能，在探索JVM后，确定造JVM的小轮子或者改写or实现JVM中GC部分的难度和可行性。
 3. 探索现在最前沿的GC算法，阅读新发表的论文。
-4. 对C语言的malloc函数进行封装，并实现GC函数，为C语言提供垃圾回收机制。
+4. 对C语言的malloc函数进行封装，并实现GC函数，为C语言提供垃圾回收机制。  
 后面的任务将会探索以上四个方向，并选择最合适的方向进行。
 
 **文献及引用和参考链接**  
 若干GC分析博客  
-《垃圾回收的算法和实现》中村成洋、相川光著  
-[JVM的GC相关内容](https://javapapers.com/java/how-java-garbage-collection-works )
