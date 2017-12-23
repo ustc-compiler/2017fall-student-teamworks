@@ -2,7 +2,7 @@
 
 ## Project link
 
-https://github.com/TensorflowXLABeginner/2017fall-student-teamworks
+Detailed Reports are included in our [XLA-Report repository](https://github.com/TensorflowXLABeginner/XLA-Report).
 
 ##Group Members
 
@@ -14,7 +14,7 @@ https://github.com/TensorflowXLABeginner/2017fall-student-teamworks
 
 ## Introduction
 
-**XLA** (Accelerated Linear Algebra)([github](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/compiler)) is a domain-specific compiler for linear algebra that optimizes TensorFlow computations. The results are improvements in speed, memory usage, and portability on server and mobile platforms. Users can use XLA via JIT (just-in-time) compilation or AOT (ahead-of-time) compilation.
+**XLA** (Accelerated Linear Algebra)( [Github](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/compiler)) is a domain-specific compiler for linear algebra that optimizes TensorFlow computations. The results are improvements in speed, memory usage, and portability on server and mobile platforms. Users can use XLA via JIT (just-in-time) compilation or AOT (ahead-of-time) compilation.
 
 In this project, we will do a small research on XLA, which covers in
 
@@ -50,9 +50,9 @@ Accomplishment:		Decide research goal and task assignment. Share study resources
 ##What we have done
 
 - [x] Discuss what will do and assign the research tasks.
-- [x] Get start with TensorFlow and learning the background knowledge. 
+- [x] Get start with TensorFlow and learning the background knowledge. We have wrote a report for [TensorFlow Programming](https://github.com/TensorflowXLABeginner/XLA-Report/blob/master/FirstCommitReports/Accelerated%20Linear%20Algebra%20Intro.md).
 - [x] Install TensorFlow with GPU support and start toying with the basic operation.
-- [x] Learning the general concepts and implementation about XLA.
+- [x] Learning the general concepts and implementation about XLA. We have wrote two report individually for [XLA Overview](https://github.com/TensorflowXLABeginner/XLA-Report/blob/master/FirstCommitReports/Accelerated%20Linear%20Algebra%20Intro.md) and [XLA Just-in-time Compilation](https://github.com/TensorflowXLABeginner/XLA-Report/blob/master/FirstCommitReports/xla_Just-in-time%20compilation.md).
 
 ##Problems
 
@@ -65,6 +65,10 @@ Accomplishment:		Decide research goal and task assignment. Share study resources
 - [ ] Learning the implementation of XLA in detail by viewing the source code.
 
 ## Reference
+
+[TensorFlow: Getting Started](https://www.tensorflow.org/get_started/)
+
+[Deep learning with Tensorflow](https://www.packtpub.com/mapt/book/big_data_and_business_intelligence/9781786469786/9/ch09lvl1sec82/accelerated-linear-algebra)
 
 [XLA Overview](https://www.tensorflow.org/performance/xla/)
 
