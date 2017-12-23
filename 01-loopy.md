@@ -1,4 +1,4 @@
-# Team 01 - Loopy
+# Team 01 - Loo.py
 
 ## 成员
 
@@ -108,11 +108,11 @@ TVM简介
 
 ## 待办清单
 
-√ 阅读参考文献并讨论
+- [x] 阅读参考文献并讨论
 
-√ 分析组员熟悉和擅长的方向，确定具体分工
+- [x] 分析组员熟悉和擅长的方向，确定具体分工
 
-安装Python以及Loo.py的相关包
+- [ ] 安装Python以及Loo.py的相关包
 
 
 
@@ -124,7 +124,7 @@ TVM简介
 
 ## 相关链接
 
-[GitHub repository](https://github.com/01-Loopy/2017fall-student-teamworks)
+[GitHub repository](https://github.com/01-Loopy/loo.py-intro)
 
 [Docker example]() Work in progress
 
