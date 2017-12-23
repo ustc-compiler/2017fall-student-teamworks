@@ -29,7 +29,7 @@ WikiPedia 对 Garbage Collection 的定义如下:
 **任务和分工**  
 已经完成了之前制定的任务计划：调研若干个经典算法，以及JAVA中GC的算法使用情况。具体完成效果如下：  
 齐炜祯：[调研GC复制算法、标记压缩法、增量式垃圾回收算法](https://github.com/USTC-Compiler-H-Team-10/teamwork/blob/master/Algotirhms.md)  
-黄一凡：调研GC算法：[GC标记-清除算法、引用计数法、分代垃圾回收](https://github.com/USTC-Compiler-H-Team-10/teamwork/blob/master/Algorithm%20by%20Fan.md)  
+黄一凡：[调研GC标记-清除算法、引用计数法、分代垃圾回收](https://github.com/USTC-Compiler-H-Team-10/teamwork/blob/master/Algorithm%20by%20Fan.md)  
 金泽文：[调研JVM中GC算法的使用](https://github.com/USTC-Compiler-H-Team-10/teamwork/blob/master/notes_for_JVM.md)
 
 **讨论记录**  
