@@ -49,7 +49,7 @@
 
 ### 下一步计划
 
-* 继续结合源码，向`C++ 中的智能指针.md` 中添加`std::unique_ptr`, `std::shared_ptr` 的分析
+* 继续结合源码，添加`std::unique_ptr`, `std::shared_ptr` 的分析
 * 调研 C++ 标准库以外的智能指针，主要是 boost 库
 * 完成`Rc<T>`和`RefCell<T>`的描述，和其内存管理
 * 考虑自己实现一个基于计数与不基于计数的 C++ 智能指针
@@ -67,10 +67,3 @@ C++ source code of smart pointers：
 
 [Rust doc](https://doc.rust-lang.org/book/second-edition/)
 
-## Links
-
-[Teamwork Repo](https://github.com/noirgif/ustc-compiler-pointer)
-
-
-
->>>>>>> 23da84f56fa9e9c2ae0835ed5a3635014ab0ddb7
