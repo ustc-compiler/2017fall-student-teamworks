@@ -32,7 +32,7 @@ In this project, we will do a simple survey on the phenomenon of Protocol Inheri
   We will discuss the design ideas that Prototype-based Programming has adopted, including `delegation`, `extension` and other concepts from `Frame Theory` and a small language called `Actor`.
 - The benefits of Protocol Inheritance towards programmers [Smart-Hypercube, nvagus]
 - The embodiment of Prototypal Inheritance in several programming languages(such as `JavaScript`) and their usages [Smart-Hypercube]
-- The implementation of Prototypal Inheritance we'll try on `Python`. [nvagus, https://github.com/compiler-teamwork-group09/proto/README.md]
+- The implementation of Prototypal Inheritance we'll try on `Python`. [nvagus, https://github.com/compiler-teamwork-group09/2017fall-student-teamworks/tree/master/proto]
 
   Though `Python` itself already has some properties of Prototypal Inheritance(e.g. we can dynamically add attributes to an object instantiated from a class), We plan to implement a Prototypal Inheritance system that does not require our own definition of classes, providing full-featured interfaces without resort of classes via Python's decorators.
   
