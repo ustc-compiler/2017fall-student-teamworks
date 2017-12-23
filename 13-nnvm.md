@@ -20,4 +20,27 @@
 ### 仓库链接
 Team 13 项目仓库： [team-13-repository](https://github.com/USTC-compiler-2017fall-group13/13-NNVM)
 
-NNVM Compier 项目仓库：[nnvm-git-repository](https://github.com/dmlc/nnvm)
+NNVM Compiler 项目仓库：[nnvm-git-repository](https://github.com/dmlc/nnvm)
+
+### 当前进展（12.23）
+* 了解 nnvm 的基本功能和作用                         
+* 了解 tvm 的基本功能和作用                          
+* 了解 nnvm compiler 执行基本流程                    
+* 成功编译 nnvm compiler                            
+* 完成 nnvm compiler 生成目标 cpu，llvm 的简单示例     
+* 完成向 nnvm compiler 注册自定义函数的简单示例        
+* 以上所完成的工作已经编写文档放置于项目仓库的 docs/ 和 test-bench/ 目录下
+
+### Reference
+* [NNVM Compiler 整体知识了解](https://www.jiqizhixin.com/articles/2017-10-07-4)
+  * 这篇文章介绍了 NNVM Compiler 的基本架构，他的一些特性和性能
+* [NNVM 整体知识了解](http://nnvm.tvmlang.org/dev/index.html)
+  * 官方文档，介绍了 NNVM 设计的核心特性
+* [TVM 整体知识了解](http://docs.tvmlang.org/dev/index.html)
+  * 官方文档，介绍了 TVM 设计的核心特性
+* [NNVM 到 LLVM 目标代码生成](http://nnvm.tvmlang.org/tutorials/get_started.html#sphx-glr-tutorials-get-started-py)
+  * 仓库代码改编自此 tutorial，初步了解 NNVM 生成 LLVM CPU 目标代码的流程
+* [向 TVM 注册自定义函数](http://docs.tvmlang.org/dev/runtime.html#packedfunc)
+  * 尝试 TVM 的核心特性之一，官方文档上没有给出具体如何完成自定义函数的注册，已经通过尝试并解决，解决方案在仓库 test-bench/def_func/ 目录下
+* [NNVM Compiler 编译安装](http://nnvm.tvmlang.org/how_to/install.html)
+  * 按照官方文档一步步编译即可，注意需要 llvm 的支持，仓库 docs/ 下有具体的中文编译过程
