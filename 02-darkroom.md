@@ -67,6 +67,9 @@ Report writing
 
 Materials collection
 
+**Updated on 12.23**
+Now we have know the working process of Darkroom, and get to know the background knowledge, the related work and the major technology and strategy in Darkroom. We run the example, and test some simple, small dataset in Darkroom to get the direct sense of the function and performance of Darkroom on CPU. Besides, we get useful information from the related publication, so that we can see how Darkroom works so fast and the innovation of Darkroom.
+
 ## TODO List
 * More materials collection for a better understanding
 * Read the source code to get a rough sense of the implementation of Darkroom
