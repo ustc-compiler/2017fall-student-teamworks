@@ -68,6 +68,7 @@ Report writing
 Materials collection
 
 **Updated on 12.23**
+
 Now we have know the working process of Darkroom, and get to know the background knowledge, the related work and the major technology and strategy in Darkroom. We run the example, and test some simple, small dataset in Darkroom to get the direct sense of the function and performance of Darkroom on CPU. Besides, we get useful information from the related publication, so that we can see how Darkroom works so fast and the innovation of Darkroom.
 
 ## TODO List
@@ -76,14 +77,15 @@ Now we have know the working process of Darkroom, and get to know the background
 * The comparison to Halide and other similiar language
 
 ## Problem
-We are not familiar with lua, which Darkroom is implemented with.
+1. We are not familiar with lua, which Darkroom is implemented with.
 
-The FPGA implementation is not available for us because of the lack of hardware support.
+2. The FPGA implementation is not available for us because of the lack of hardware support.
 
 ## Links
-[Darkroom: Compiling High-Level Image Processing Code into Hardware Pipelines
-](http://darkroom-lang.org/darkroom14-low.pdf)
+[Darkroom: Compiling High-Level Image Processing Code into Hardware Pipelines](http://darkroom-lang.org/darkroom14-low.pdf)
 
 [Darkroom](http://darkroom-lang.org/)
+
+To see our current progress:
 
 [Github Repository](https://github.com/Compiler-02)
