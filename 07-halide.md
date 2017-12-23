@@ -2,11 +2,11 @@
 
 ## 组员
 
-|Name|GitHub ID|
-|:-:|:-:|
-|张航凯|Catkins|
-|汪超|ChaoWao|
-|阮超逸|Christianyi|
+| Name |  GitHub ID  |
+| :--: | :---------: |
+| 张航凯  |   Catkins   |
+|  汪超  |   ChaoWao   |
+| 阮超逸  | Christianyi |
 
 ## 简介
 
@@ -20,3 +20,47 @@
 ## 项目链接
 
 [Github Repository](https://github.com/Caktins/compiler-teamwork.git)
+
+
+## 12.23 提交内容
+
+###任务分工
+
+* 调研类：三人独立阅读相关论文，做好相关笔记，在下次组会上交流。
+  阅读论文见参考资料。汪超负责1，2，3；阮超逸负责2，3，4；张航凯负责3，4，1；
+  保证每篇论文至少两人看过，便于互补不足。
+* 工程类：汪超负责运行halide的样例，对halide做性能测试，与经典算法做对比；阮超逸、张航凯      调研与halide有关的中型工程项目、halide内部算法优化等工作。
+
+###成员讨论方式
+* 线下图书馆组会
+* QQ讨论组
+
+### 进展情况
+* 完成对halide的基本语法了解、使用、编译工作。
+* 通过阅读论文，了解halide内部机制、特性及业界对其的研究热点。
+
+### 下一步计划
+* 论文交流，深入探讨halide内部机制及特性
+* 着手开始构建自己的halide应用或者内部算法优化。
+
+### 参考文献
+
+1.[**Automatically Scheduling Halide Image Processing Pipelines** ](http://graphics.cs.cmu.edu/projects/halidesched/)
+
+[Ravi Teja Mullapudi](http://rmullapudi.bitbucket.org/) [Andrew Adams](http://people.csail.mit.edu/abadams), [Dillon Sharlet](http://www.dsharlet.com/), [Jonathan Ragan-Kelley](http://people.csail.mit.edu/jrk), [Kayvon Fatahalian](http://www.cs.cmu.edu/~kayvonf/). 
+*SIGGRAPH 2016*
+
+2.[**Decoupling Algorithms from the Organization of Computation for High Performance Image Processing**](http://people.csail.mit.edu/jrk/jrkthesis.pdf)
+[Jonathan Ragan-Kelley](http://people.csail.mit.edu/jrk)
+Ph.D. dissertation, MIT, May 2014.
+
+3.[**Halide: A Language and Compiler for Optimizing Parallelism, Locality, and Recomputation in Image Processing Pipelines**](http://people.csail.mit.edu/jrk/halide-pldi13.pdf)
+
+[Jonathan Ragan-Kelley](http://people.csail.mit.edu/jrk), [Connelly Barnes](http://www.connellybarnes.com/work/), [Andrew Adams](http://people.csail.mit.edu/abadams), [Sylvain Paris](http://people.csail.mit.edu/sparis), [Frédo Durand](http://people.csail.mit.edu/fredo), [Saman Amarasinghe](http://people.csail.mit.edu/saman). 
+*PLDI 2013*
+
+4.[**Decoupling Algorithms from Schedules for Easy Optimization of Image Processing Pipelines** ](http://people.csail.mit.edu/jrk/halide12)
+
+[Jonathan Ragan-Kelley](http://people.csail.mit.edu/jrk), [Andrew Adams](http://people.csail.mit.edu/abadams), [Sylvain Paris](http://people.csail.mit.edu/sparis), [Marc Levoy](http://graphics.stanford.edu/~levoy), [Saman Amarasinghe](http://people.csail.mit.edu/saman), [Frédo Durand](http://people.csail.mit.edu/fredo). 
+*SIGGRAPH 2012*
+
