@@ -47,6 +47,7 @@
 
 - 继续结合源码，向`C++ 中的智能指针.md` 中添加`std::unique_ptr`, `std::shared_ptr` 的分析
 - 调研 C++ 标准库以外的智能指针，主要是 boost 库
+- 完成`Rc<T>`和`RefCell<T>`的描述，和其内存管理
 - 。。。
 
 ## Links
