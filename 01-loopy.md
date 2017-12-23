@@ -2,11 +2,11 @@
 
 ## 成员
 
-姓名 | 学号
---------- | --------
-[何宪航](https://github.com/orgs/01-Loopy/people/hangGit)| PB14011082
-[范子健](https://github.com/orgs/01-Loopy/people/Fanzijian1996)| PB14209127
-[韦清](https://github.com/orgs/01-Loopy/people/wwqqqqq) |  PB15000027
+姓名 | 学号         | GitHub用户名
+---- | ----------- | ------
+何宪航 | PB14011082 | [hangGit](https://github.com/orgs/01-Loopy/people/hangGit)
+范子健 | PB14209127 | [Fanzijian1996](https://github.com/orgs/01-Loopy/people/Fanzijian1996)
+韦清   | PB15000027 | [wwqqqqq](https://github.com/orgs/01-Loopy/people/wwqqqqq)
 
 ## 简介
 
@@ -23,24 +23,111 @@ Loo.py是一个内嵌于Python的编程系统，包含基于数组等数据模�
 
 因此，Loo.py对于向量化操作、循环展开以及指令级并行均有较好的支持，其应用主要针对基于数组且控制流中数据依赖较少的循环代码，例如：稀疏矩阵乘法、迭代收敛等。此外，Loo.py和PyCUDA以及PyOpenCL深度集成，便于快速将计算模型转换为低层次、高性能代码实现。
 
-## 研究内容
+## 研究任务以及分工
+
+### 韦清：
 
 - Loo.py编程系统的实现方式
 
+结合论文以及代码具体说明介绍Loo.py完整的实现方式
+
+Loo.py和一般的代码生成器的主要区别
+
+Loo.py与传统编译器的比较以及优劣分析
+
 - 多面体模型分析
 
-- Loo.py在TVM中的应用
+多面体模型如何表示程序
+
+多面体模型和抽象语法树的对比
+
+应用场景
+
+基于示例说明多面体模型和Loo.py中kernel的语句如何对应
+
+### 何宪航：
 
 - Loo.py的示例实现
 
+使用Loo.py编写测试样例；如矩阵乘法、LU分解等
+
+与Numpy的实现进行对比
+
+测试样例基于PyOpenCL的GPU实现
+
+### 范子健：
+
+- Loo.py在TVM中的应用
+
+TVM简介
+
+结合源代码分析Loo.py对于TVM的影响
+
 - 加速比量化分析
 
-## 链接
+发布包含Loo.py以及测试样例的Docker容器
+
+在单核、多核以及GPU等平台上进行测试
+
+分析加速比
+
+## 讨论记录
+
+### 12.20
+
+地点：西区图书馆；15分钟
+
+讨论项目内容的重点和具体需要完成的任务，计划在下次讨论时确定每个人的分工以及任务需要完成到什么程度。
+熟悉基于版本控制工具的协作。
+
+
+### 12.22
+
+地点：西区图书馆/在线；15分钟/3小时
+
+确定个人分工，针对分工的任务制定提纲；讨论完成所需技能以及学习规划。
+
+
+## 进展记录
+
+### 12.13
+
+添加项目简介，完成初次提交。
+
+### 12.20
+
+深入讨论项目内容，具体列出任务规划
+
+### 12.22
+
+确定分工，制定任务提纲
+
+## 问题记录
+
+- 多面体模型的具体解释以及示例
+
+## 待办清单
+
+√ 阅读参考文献并讨论
+
+√ 分析组员熟悉和擅长的方向，确定具体分工
+
+安装Python以及Loo.py的相关包
+
+
+
+## 引用
 
 [Loo.py: transformation-based code generation for GPUs and CPUs](https://arxiv.org/abs/1405.7470)
 
 [TVM: Tensor IR Stack for DL](https://github.com/dmlc/tvm)
 
+## 相关链接
+
 [GitHub repository](https://github.com/01-Loopy/2017fall-student-teamworks)
 
 [Docker example]() Work in progress
+
+[Official Loo.py git repository](https://github.com/inducer/loopy)
+
+[Documentation for Loo.py](https://documen.tician.de/loopy/)
