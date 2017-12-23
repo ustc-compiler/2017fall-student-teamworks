@@ -3,11 +3,15 @@
 ## 项目地址 
 [https://github.com/Robert-Lu/teamwork-14-Macro](https://github.com/Robert-Lu/teamwork-14-Macro)
 
-## 组员（Github ID)
+## 组员信息
 
-* 鲁吴越（[Robert-Lu](https://github.com/Robert-Lu)）
-* 李双利（[agave233](https://github.com/agave233)）
-* 罗永平（[ypluo](https://github.com/ypluo)）
+|  组员  |                Github ID                 |  身份  |
+| :--: | :--------------------------------------: | :--: |
+| 鲁吴越  | [Robert-Lu](https://github.com/Robert-Lu) |  队长  |
+| 李双利  | [agave233](https://github.com/agave233)  |  成员  |
+| 罗永平  |    [ypluo](https://github.com/ypluo)     |  成员  |
+
+
 
 ## 项目简介
 
@@ -99,3 +103,10 @@
 
 ## 文献及引用
 
+[Herman, David, and Mitchell Wand. "*A theory of hygienic macros.*" ESOP. Vol. 8. 2008.](http://www.ccs.neu.edu/home/dherman/research/papers/esop08-hygiene.pdf)
+
+[Clinger, William. "*Hygienic macros through explicit renaming*." ACM SIGPLAN Lisp Pointers 4.4 (1991): 25-28.](https://dl.acm.org/citation.cfm?id=1317269)
+
+[Rust Documentation 1.7.0 - Macros](https://doc.rust-lang.org/1.7.0/book/macros.html)
+
+[The Common Lisp Cookbook - Macros and Backquote](http://cl-cookbook.sourceforge.net/macros.html)
