@@ -2,13 +2,12 @@
 ===
 
 ## 小组成员：
+姓名 | 身份 | github用户名
+--------- | --------  | ---------
+戢凯文| 队长 | [jikaiwen](https://github.com/jikaiwen)
+滕思洁| 队员 | [yunmoxyz](https://github.com/yunmoxyz)
+赵皓宇| 队员 | [PB15111605](https://github.com/PB15111605)
 
-```
-名字	学号		github用户名
-戢凯文	PB15000211	jikaiwen
-滕思洁	PB15020737	yunmoxyz
-赵皓宇	PB15111605	PB15111605
-```
 
 项目链接：
 [https://github.com/2017-CompilerH-a3/Teamwork-Traits](https://github.com/2017-CompilerH-a3/Teamwork-Traits)
