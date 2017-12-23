@@ -1,10 +1,10 @@
 # Team 02-Darkroom
 ## Members
- Name   | ID        | github
-|----   | ----      | ----------
-|施泽丰 |PB14210224 | [shiuang](https://github.com/orgs/Compiler-02/people/shiuang)
-|钟  立 |PB15000037 |[FloridSleeves](https://github.com/orgs/Compiler-02/people/FloridSleeves)
-|郭振江 |PB15030776 |[ExquisiteFunction](https://github.com/ExquisiteFunction/darkroom/commits/master/report.md?author=ExquisiteFunction)
+ Name   | ID        | github | identity
+|----   | ----      | ----------
+|施泽丰 |PB14210224 | [shiuang](https://github.com/orgs/Compiler-02/people/shiuang) |队员
+|钟  立 |PB15000037 |[FloridSleeves](https://github.com/orgs/Compiler-02/people/FloridSleeves)| 队长
+|郭振江 |PB15030776 |[ExquisiteFunction](https://github.com/ExquisiteFunction/darkroom/commits/master/report.md?author=ExquisiteFunction)|队员
 
 ## Introduction
 Darkroom is a language and compiler for image processing embedded in Terra. It allows to compile program directly into line-buffered pipelines, with all intermediate values in local line-buffer sotrage.
