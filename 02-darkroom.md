@@ -14,31 +14,25 @@ Our group dive into the principle of Darkroom, doing research on the programming
 ## Task  
 **施泽丰**
 
-Programming model of Darkroom
+ Programming model of Darkroom including pipeline buffer,shift operator...
 
-Pipeline buffer
-
-Shift operator
-
-Schedule strategy model of Darkroom
+ Schedule strategy model of Darkroom
 
 **钟立**
 
-Halide
+ The former related work: Halide,DSP,SDF...
+ 
+ The difference comparison of former work and Darkroom
 
-DSP
-
-SDF
-
-Background knowledge(ISP...)
+ Background knowledge(ISP, FPGA...)
 
 **郭振江**
 
-Implementation of Darkroom on ASIC, FPGA and CPU
+ Implementation of Darkroom on ASIC, FPGA and CPU
 
-The output of Darkroom implementation
+ The output of Darkroom implementation
 
-Optimization result
+ Optimization result
 
 **Common Task**
 
@@ -72,11 +66,16 @@ Read the related publication.
 Report writing
 
 Materials collection
- 
+
 ## TODO List
 * More materials collection for a better understanding
 * Read the source code to get a rough sense of the implementation of Darkroom
 * The comparison to Halide and other similiar language
+
+## Problem
+We are not familiar with lua, which Darkroom is implemented with.
+
+The FPGA implementation is not available for us because of the lack of hardware support.
 
 ## Links
 [Darkroom: Compiling High-Level Image Processing Code into Hardware Pipelines
