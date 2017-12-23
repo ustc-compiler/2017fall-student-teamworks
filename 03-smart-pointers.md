@@ -14,7 +14,6 @@
 
 本次项目尝试从C++的智能指针入手，探索并讨论如下内容：
 
-<<<<<<< HEAD
 * [raw pointer 在应用中可能产生的问题](https://github.com/noirgif/ustc-compiler-pointer/blob/master/cpp-raw-pointer-problem.md)
 * [C++ 中 smart pointer 的标准，实现方式和内存管理](https://github.com/noirgif/ustc-compiler-pointer/blob/master/cpp-smart-pointer.md)
 * [Rust 语言中的智能指针及其内存管理](https://github.com/noirgif/ustc-compiler-pointer/blob/master/rust-smart-pointer.md)
