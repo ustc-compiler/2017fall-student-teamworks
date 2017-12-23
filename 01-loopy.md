@@ -1,4 +1,4 @@
-# Team 01 - Loo.py
+# Team 01 - [Loo.py](https://github.com/01-Loopy/loo.py-intro)
 
 ## 成员
 
@@ -22,6 +22,8 @@ Loo.py是一个内嵌于Python的编程系统，包含基于数组等数据模�
 事实上，抽象语法树(AST)作为常见的编译器中间表示并不适合复杂的程序优化。[多面体模型](https://dl.acm.org/citation.cfm?id=1025992)作为AST的改进，适合表示串行以及并行程序。基于多面体模型的编译器从抽象语法树开始对程序进行分析和变换，然后找到新的代码执行顺序。而目前的研究瓶颈主要在于现有算法难以找到合适的代码执行顺序。相比之下，Loo.py要求用户在宿主语言中采取基于多面体模型的方式具体描述计算模型。用户定义的计算模型被存储在宿主语言的对象中（如loopy kernel，类似于tensorflow session），而代码之间仅存在偏序关系，以便于代码生成器进行深度优化。
 
 因此，Loo.py对于向量化操作、循环展开以及指令级并行均有较好的支持，其应用主要针对基于数组且控制流中数据依赖较少的循环代码，例如：稀疏矩阵乘法、迭代收敛等。此外，Loo.py和PyCUDA以及PyOpenCL深度集成，便于快速将计算模型转换为低层次、高性能代码实现。
+
+具体介绍文档请参考此项目的 [GitHub repository](https://github.com/01-Loopy/loo.py-intro)。
 
 ## 研究任务以及分工
 
@@ -102,6 +104,10 @@ TVM简介
 
 确定分工，制定任务提纲
 
+### 12.23
+
+初步完成项目大纲，完成第二次提交。
+
 ## 问题记录
 
 - 多面体模型的具体解释以及示例
@@ -114,7 +120,7 @@ TVM简介
 
 - [ ] 安装Python以及Loo.py的相关包
 
-
+- [ ] 汇总各自调研信息
 
 ## 引用
 
@@ -124,7 +130,7 @@ TVM简介
 
 ## 相关链接
 
-[GitHub repository](https://github.com/01-Loopy/loo.py-intro)
+[此项目的 GitHub repository](https://github.com/01-Loopy/loo.py-intro)
 
 [Docker example]() Work in progress
 
