@@ -41,31 +41,37 @@ Install and run the example of darkroom
 Read the related publication to get the basic concepts of Darkroom.
 
 ## Discussion
+
 * 10.12
+
  Discussion on the topic
 
 * 11.28
+
  Installation problem discussion
 
 * 12.09
+
  Division of team work
+ 
+* Total: 1-2h
  
 ## Progress
 **10.07-10.12**
 
-Choose the research topic
+  Choose the research topic
 
 **10.12-11.28**
 
-Install Darkroom and the dependencies(lua,terra，llvm...)
+  Install Darkroom and the dependencies(lua,terra，llvm...)
 
-Read the related publication.
+  Read the related publication.
 
 **12.09-12.23**
 
-Report writing
+  Report writing
 
-Materials collection
+  Materials collection
 
 **Updated on 12.23**
 
