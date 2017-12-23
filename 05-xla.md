@@ -4,7 +4,7 @@
 
 https://github.com/TensorflowXLABeginner/2017fall-student-teamworks
 
-##Group Members
+## Group Members
 
 | Name | Github Account | ID         |
 | ---- | -------------- | ---------- |
@@ -22,7 +22,7 @@ In this project, we will do a small research on XLA, which covers in
 * How does XLA do it
 * Where does JIT and AOT came in
 
-##Task Assignment
+## Task Assignment
 
 ### 宋小牛：Implementation of XLA, focusing on "How does XLA do it".
 
