@@ -8,11 +8,11 @@
 |安鸣霄|nvagus|
 
 
-Visit [our organization](https://github.com/compiler-teamwork-group09) for this projects's codes and docs.
+Visit [our organization](https://github.com/compiler-teamwork-group09) for this project's codes and docs.
 
 ## Overview
 
-Much different from Class-based Inheritance, as a style of object-oriented programming, Protocol Inheritance provides a novel approach of reusing data.
+Much different from Class-based Inheritance, as a style of object-oriented programming, Prototypal Inheritance provides a novel approach of reusing data.
 
 **Here's a quick view of the phenomenon:**
 
@@ -25,14 +25,14 @@ bar.one // Resolves to 1.
 ```
 ## Our Project's Description
 
-In this project, we will do a simple survey on the phenomenon of Protocol Inheritance. We will mainly cover in:
+In this project, we will do a simple survey on the phenomenon of Prototypal Inheritance. We will mainly cover in:
 
-- Concepts of Protocol Inheritance [songchaow]
+- Concepts of Prototypal Inheritance [songchaow]
 - Genesis(origin) of prototype-based programming model [songchaow]
 
 We will discuss the design ideas that Prototype-based Programming has adopted, including `delegation`, `extension` and other concepts from `Frame Theory` and a small language called `Actor`.
 
-- The benefits of Protocol Inheritance towards programmers [Smart-Hypercube, nvagus]
+- The benefits of Prototypal Inheritance towards programmers [Smart-Hypercube, nvagus]
 - The embodiment of Prototypal Inheritance in several programming languages(such as `JavaScript`) and their usages [Smart-Hypercube]
 - The implementation of Prototypal Inheritance we'll try on `Python`. [nvagus, https://github.com/compiler-teamwork-group09/python3-proto]
 
