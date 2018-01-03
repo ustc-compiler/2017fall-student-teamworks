@@ -2,11 +2,11 @@
 
 ## 组员
 
-| Name |  GitHub ID  |
-| :--: | :---------: |
-| 张航凯  |   Catkins   |
-|  汪超  |   ChaoWao   |
-| 阮超逸  | Christianyi |
+| Name | 身份 |  GitHub ID  |
+| :--: | :---------: | :--: | 
+| 张航凯 | 队长 |   [Catkins](https://github.com/Caktins)   | 
+|  汪超  | 队员 |   [ChaoWao](https://github.com/ChaoWao)   |
+| 阮超逸 | 队员 | [Christianyi](https://github.com/Christianyi) |
 
 ## 简介
 
@@ -21,17 +21,34 @@
 
 [Github Repository](https://github.com/Caktins/compiler-teamwork.git)
 
+## 1.3 提交内容
+
+### 成员讨论方式
+* 线下图书馆组会
+* QQ讨论组
+
+### 进展情况
+* 每人阅读3篇paper并记录下相关资料。
+* 每人详细写一篇paper的总结，详见git中的[notes for paper](https://github.com/Caktins/compiler-teamwork/tree/master/notes%20for%20paper)
+* 在论文的基础上交流讨论，了解`Halide`作为嵌在C++内的一门语言，其实际使用
+
+### 下一步计划
+* 根据论文所描述的用法，探索使用和复现的可能性
+* 学习相关`Halide`的实际应用，一些具体应用来自于paper中。
+* 自主尝试构建`Halide`应用
+
+
 
 ## 12.23 提交内容
 
-###任务分工
+### 任务分工
 
 * 调研类：三人独立阅读相关论文，做好相关笔记，在下次组会上交流。
   阅读论文见参考资料。汪超负责1，2，3；阮超逸负责2，3，4；张航凯负责3，4，1；
   保证每篇论文至少两人看过，便于互补不足。
 * 工程类：汪超负责运行halide的样例，对halide做性能测试，与经典算法做对比；阮超逸、张航凯      调研与halide有关的中型工程项目、halide内部算法优化等工作。
 
-###成员讨论方式
+### 成员讨论方式
 * 线下图书馆组会
 * QQ讨论组
 
