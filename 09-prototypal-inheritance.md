@@ -43,12 +43,25 @@ Though `Python` itself already has some properties of Prototypal Inheritance(e.g
 - By Dec 23rd, 2017.
   * Discussion on QQ: scheduling.
   * Concept and origin: information collected.
-  * Implementation on Python: utils confirmed.
+  * Implementation on Python(namely, **python3-proto** project): utils confirmed.
 - By Jan 3rd, 2017
-  * Documents: repository established([documents repository](https://github.com/compiler-teamwork-group09/documents)). We've analyzed general features and design philosophy of prototype-based programming compared to class-based programming.
+  * Documents: 
+  
+    - a repository for documents has been established([documents repository](https://github.com/compiler-teamwork-group09/documents)). 
+  
+    - songchaow analyzed general features and design philosophy of prototype-based programming compared to class-based programming.(the first part of [README.md](https://github.com/compiler-teamwork-group09/documents/blob/master/README.md))
+
+    - Smart-Hypercube added his insights into protypal inheritance on the designing level, and poited out some implementation mechanisms of prototype characteristics related to `Python` and `Javascript`.(the second part of [README.md](https://github.com/compiler-teamwork-group09/documents/blob/master/README.md))
+
+  * [**python3-proto**](https://github.com/compiler-teamwork-group09/python3-proto) project:
+  
+    nvagus reorganized the structure of this project.
+
 
 ## To-do List
 - Continue to read the paper, *Classifying Prototype-based Programming Language*, study several programming languages the paper has mentioned, and finally sort out how prototype-based languages are influenced by other languages before. [songchaow]
+
+- The [Readme.md](https://github.com/compiler-teamwork-group09/documents/blob/master/README.md) file in the document repository is yet lacking structural organization, though lots of useful points are available from it. We plan to reorganize the document later.
 
 ## References
 - C.Dony, J.Malenfant, D.Bardou(1999). *Classifying Prototype-based Programming Language*. 
