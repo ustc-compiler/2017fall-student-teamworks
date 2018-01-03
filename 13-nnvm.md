@@ -31,6 +31,12 @@ NNVM Compiler 项目仓库：[nnvm-git-repository](https://github.com/dmlc/nnvm)
 * 完成向 nnvm compiler 注册自定义函数的简单示例        
 * 以上所完成的工作已经编写文档放置于项目仓库的 docs/ 和 test-bench/ 目录下
 
+### 进展 (1.3)
+* 正在联系作者了解关于对计算图优化的具体流程
+* tvm 介绍文档介绍补充
+* nnvm 计算图优化调研（由于 nnvm compiler 文档没有给出具体的图优化的介绍，正在从源码层面并结合典型优化方法进行调研）
+* 优化示例（test-bench 中）
+
 ### Reference
 * [NNVM Compiler 整体知识了解](https://www.jiqizhixin.com/articles/2017-10-07-4)
   * 这篇文章介绍了 NNVM Compiler 的基本架构，他的一些特性和性能
