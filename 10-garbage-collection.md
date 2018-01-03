@@ -65,7 +65,7 @@ QQ群: 40分钟
 **任务和分工**  
 
 完成了对上一阶段计划的探索调研，并确定方向开始了相关工作：尝试阅读JVM的GC源码；调研实现JVM中GC轮子的难度和可行性；调研业界最前沿的GC算法，调研近些年的论文；通过封装C语言的malloc等函数，实现GC算法，为C语言提供垃圾回收机制。具体调研及完成效果如下：  
-齐炜祯：[调研论文-Android O的GC实现](https://github.com/USTC-Compiler-H-Team-10/teamwork/blob/master/GC-state-of-the-art.md)  、 [调研C语言垃圾回收的开源项目](https://github.com/USTC-Compiler-H-Team-10/teamwork/tree/master/gcForC)  
+齐炜祯：[调研论文-Android O的GC实现](https://github.com/USTC-Compiler-H-Team-10/teamwork/blob/master/GC-state-of-the-art.md)  、 [调研C语言垃圾回收的开源项目](https://github.com/USTC-Compiler-H-Team-10/teamwork/tree/master/gcForC) 
 黄一凡：[调研JVM中不同种类的垃圾收集器](https://github.com/USTC-Compiler-H-Team-10/teamwork/blob/master/Java%20Garbage%20Collector.md)  
 金泽文：[进一步调研JVM中GC机制的细节](https://github.com/USTC-Compiler-H-Team-10/teamwork/blob/master/notes_for_JVM.md)
 
@@ -91,10 +91,10 @@ JVM的GC源码深入调研可行，决定进一步阅读，并深入理解；
 
 **下一步的计划**  
 
-结合上面的进展记录部分的结果，商讨出下面探索的方向。
-探索方向：  
-1.进一步阅读JVM的GC源码，并深入理解；
-2. 通过进一步调研C语言垃圾回收的开源项目，对C语言独立实现垃圾回收机制、实现各种垃圾回收算法。
+结合上面的进展记录部分的结果，商讨出下面探索的方向。 探索方向：
+1. 进一步阅读JVM的GC源码，并深入理解。目标：分析到源码各个函数；  
+2. 通过进一步调研C语言垃圾回收的开源项目，对C语言独立实现垃圾回收机制。目标：实现C语言的简单garbage collector。
+
 
 **文献及引用和参考链接**  
 
