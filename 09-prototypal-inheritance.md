@@ -44,3 +44,13 @@ Though `Python` itself already has some properties of Prototypal Inheritance(e.g
   * Discussion on QQ: scheduling.
   * Concept and origin: information collected.
   * Implementation on Python: utils confirmed.
+- By Jan 3rd, 2017
+  * Documents: repository established([documents repository](https://github.com/compiler-teamwork-group09/documents)). We've analyzed general features and design philosophy of prototype-based programming compared to class-based programming.
+
+## To-do List
+- Continue to read the paper, *Classifying Prototype-based Programming Language*, study several programming languages the paper has mentioned, and finally sort out how prototype-based languages are influenced by other languages before. [songchaow]
+
+## References
+- C.Dony, J.Malenfant, D.Bardou(1999). *Classifying Prototype-based Programming Language*. 
+Retrieved from http://www.lirmm.fr/~dony/postscript/proto-book.pdf
+- *Prototype-based programming*. Retrieved from https://en.wikipedia.org/wiki/Prototype-based_programming
