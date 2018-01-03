@@ -60,7 +60,58 @@ QQ群: 40分钟
 4. 对C语言的malloc函数进行封装，并实现GC函数，为C语言提供垃圾回收机制。  
 **后面的任务将会探索以上四个方向，并选择最合适的方向进行。**
 
+
+### 5. 1月3日提交
+**任务和分工**  
+
+完成了对上一阶段计划的探索调研，并确定方向开始了相关工作：尝试阅读JVM的GC源码；调研实现JVM中GC轮子的难度和可行性；调研业界最前沿的GC算法，调研近些年的论文；通过封装C语言的malloc等函数，实现GC算法，为C语言提供垃圾回收机制。具体调研及完成效果如下：  
+齐炜祯：[调研论文-Android O的GC实现](https://github.com/USTC-Compiler-H-Team-10/teamwork/blob/master/GC-state-of-the-art.md)  、 [调研C语言垃圾回收的开源项目](https://github.com/USTC-Compiler-H-Team-10/teamwork/tree/master/gcForC) 
+黄一凡：[调研JVM中不同种类的垃圾收集器](https://github.com/USTC-Compiler-H-Team-10/teamwork/blob/master/Java%20Garbage%20Collector.md)  
+金泽文：[进一步调研JVM中GC机制的细节](https://github.com/USTC-Compiler-H-Team-10/teamwork/blob/master/notes_for_JVM.md)
+
+**讨论记录**  
+#### 1.3
+QQ群: 30分钟 + 图书馆四楼讨论区: 45分钟  
+第二阶段的调研任务基本完成；
+分享各自调研情况；  
+讨论并确定、分配了最后阶段的工作任务以及方向。
+#### 1.2
+QQ群: 30分钟  
+交流了各自的进展。
+
+**进展记录及问题**
+
+第二阶段的调研任务基本完成，四个方向都进行了基本的了解，并商讨了最后阶段的深入研究方向。：
+JVM的GC源码深入调研可行，决定进一步阅读，并深入理解；
+实现JVM的小轮子难度较大，放弃；
+调研业界最前沿的GC算法，调研近些年的相关论文，探索了近几年有关GC的论文，突破极小。基本上都是在特定的场合下优化改进传统GC算法的一些细节，调研了Android O的最新GC框架；
+调研发现对C语言的垃圾回收实现可行，决定通过开源项目进一步自行实现。
+
+之前遇到的问题基本通过本次调研得到的解决。接下来根据确定的方向进一步深入。
+
+**下一步的计划**  
+
+结合上面的进展记录部分的结果，商讨出下面探索的方向。 探索方向：
+1. 进一步阅读JVM的GC源码，并深入理解。目标：分析到源码各个函数；  
+2. 通过进一步调研C语言垃圾回收的开源项目，对C语言独立实现垃圾回收机制。目标：实现C语言的简单garbage collector。
+
+
 **文献及引用和参考链接**  
-若干GC分析博客  
+
 [《垃圾回收的算法与实现》 【日】 中村成洋 相川光](https://www.amazon.cn/dp/B01JZS0AO8 )  
+
 [JVM的GC相关内容](https://javapapers.com/java/how-java-garbage-collection-works)
+
+[Mark and Sweep Garbage Collector in C - GitHub开源项目](https://github.com/briancain/garbage-collector)
+
+[Performance and Memory Improvements in Android Run Time (ART) (Google I/O '17) - youtube](https://www.youtube.com/watch?v=iFE2Utbv1Oo)
+
+[深入理解 Java G1 垃圾收集器](http://blog.jobbole.com/109170/)
+
+[Garbage-First Garbage Collection](https://dl.acm.org/citation.cfm?id=1029879)
+
+[深入理解JVM(3)——7种垃圾收集器](https://crowhawk.github.io/2017/08/15/jvm_3/)
+
+[What’s the difference between concurrency and parallelism](http://joearms.github.io/2013/04/05/concurrent-and-parallel-programming.html)
+
+[Getting Started with the G1 Garbage Collector](http://www.oracle.com/webfolder/technetwork/tutorials/obe/java/G1GettingStarted/index.html)，[翻译文章](http://blog.csdn.net/renfufei/article/details/41897113)
