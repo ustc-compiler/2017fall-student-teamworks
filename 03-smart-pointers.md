@@ -22,13 +22,15 @@
 ## 分工
 
 * 王若晖： 
-	* Rust 语言中的智能指针及其内存管理
+  * Rust 语言中的智能指针及其内存管理
 * 张一卓： 
-	* C++ 中 smart pointer 的标准，实现方式和内存管理
+  * C++ 中 smart pointer 的标准，实现方式和内存管理
+  * C++ smart pointer 的简单实现
 * 钱劲翔： 
-	* raw pointer 在应用中可能产生的问题
+  * raw pointer 在应用中可能产生的问题
+  * C++ 标准库以及 boost库中部分 smart pointers 的分析
 
-## 进度和目标
+## 第一次提交
 
 ### 提交内容
 
@@ -53,6 +55,28 @@
 * 完成`Rc<T>`和`RefCell<T>`的描述，和其内存管理
 * 考虑自己实现一个基于计数与不基于计数的 C++ 智能指针
 * 加强讨论，与 GC 组交流一下
+
+## 第二次提交
+
+### 提交内容
+
+王若晖:
+
+张一卓：
+
+- 继续结合源码，分析了`std::unique_ptr`和`std::weak_ptr`的使用方式和实现机制，并编写了一些示例程序
+- 补充文档，见 [cpp-smart-pointer.md](https://github.com/noirgif/ustc-compiler-pointer/blob/master/cpp-smart-pointer.md)
+
+钱劲翔:
+
+- 结合源码分析了`std::shared_ptr`的使用和实现，补充了文档[cpp_smart_pointer.md](https://github.com/noirgif/ustc-compiler-pointer/blob/master/cpp-smart-pointer.md)
+- 调研了`boost`库中的一些智能指针，介绍了它们的特点，编写示例程序说明使用方式，文档见 [boost-smart-pointer.md](https://github.com/noirgif/ustc-compiler-pointer/blob/master/boost-smart-pointers.md)
+
+### 下一步计划
+
+- 完成 C++ 智能指针的简单实现
+- 整理完善所写的文档
+- 与 GC 组讨论，互提 issue
 
 ## Links
 
