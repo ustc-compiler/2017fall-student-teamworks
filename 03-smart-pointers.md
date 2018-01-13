@@ -81,6 +81,14 @@
 * 丰富Rust中几个类的实现细节，探索其实际利用（以Servo为例）
 * 与 GC 组讨论，互提 issue
 
+## 第三次提交
+
+### 提交内容
+
+王若晖：
+
+* 简要描述`Arc<T>`，并简述Rust性质
+
 ## Links
 
 [Teamwork Repository](https://github.com/noirgif/ustc-compiler-pointer)
