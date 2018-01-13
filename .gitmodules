@@ -1,0 +1,3 @@
+[submodule "06-concepts.presentation/reveal.js"]
+	path = 06-concepts.presentation/reveal.js
+	url = https://github.com/hakimel/reveal.js
