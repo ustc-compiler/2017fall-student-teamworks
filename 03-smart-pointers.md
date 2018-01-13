@@ -17,6 +17,7 @@
 * [raw pointer 在应用中可能产生的问题](https://github.com/noirgif/ustc-compiler-pointer/blob/master/cpp-raw-pointer-problem.md)
 * [C++ 中 smart pointer 的标准，实现方式和内存管理](https://github.com/noirgif/ustc-compiler-pointer/blob/master/cpp-smart-pointer.md)
 * [Rust 语言中的智能指针及其内存管理](https://github.com/noirgif/ustc-compiler-pointer/blob/master/rust-smart-pointer.md)
+* [C++ shared_ptr 的简单实现](https://github.com/noirgif/ustc-compiler-pointer/blob/master/implement_shared_ptr.md)
 * smart pointer 在项目中的案例分析
 
 ## 分工
@@ -60,7 +61,7 @@
 
 ### 提交内容
 
-王若晖:
+王若晖：
 
 * 完成`Rc<T>`（包括`Weak<T>`）的描述，简要描述`Arc<T>`
 
@@ -69,7 +70,7 @@
 * 继续结合源码，分析了`std::unique_ptr`和`std::weak_ptr`的使用方式和实现机制，并编写了一些示例程序
 * 补充文档，见 [cpp-smart-pointer.md](https://github.com/noirgif/ustc-compiler-pointer/blob/master/cpp-smart-pointer.md)
 
-钱劲翔:
+钱劲翔：
 
 * 结合源码分析了`std::shared_ptr`的使用和实现，补充了文档[cpp_smart_pointer.md](https://github.com/noirgif/ustc-compiler-pointer/blob/master/cpp-smart-pointer.md)
 * 调研了`boost`库中的一些智能指针，介绍了它们的特点，编写示例程序说明使用方式，文档见 [boost-smart-pointer.md](https://github.com/noirgif/ustc-compiler-pointer/blob/master/boost-smart-pointers.md)
@@ -80,6 +81,21 @@
 * 整理完善所写的文档
 * 丰富Rust中几个类的实现细节，探索其实际利用（以Servo为例）
 * 与 GC 组讨论，互提 issue
+
+## 第三次提交
+
+### 提交内容
+
+王若晖：
+
+张一卓：
+
+- 组织和GC组的讨论，互提issue
+- 完成了 shared_ptr 的简单实现，文档见[implement_shared_ptr.md](https://github.com/noirgif/ustc-compiler-pointer/blob/master/implement_shared_ptr.md)
+
+钱劲翔：
+
+- 完善并整理文档，用 [gitbooks](https://qianjx.gitbooks.io/teamwork-smart-pointers/content/) 发布  
 
 ## Links
 
@@ -92,4 +108,6 @@ C++ source code of smart pointers：
 [ICSE2016-SERVO](https://github.com/noirgif/ustc-compiler-pointer/blob/master/References/icse16-servo-preprint.pdf)
 
 [Rust doc](https://doc.rust-lang.org/book/second-edition/)
+
+使用整理过的 [gitbooks](https://qianjx.gitbooks.io/teamwork-smart-pointers/content/) 作为答辩材料
 
