@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="李嘉豪 毕昊阳 袁牧">
+  <meta name="dcterms.date" content="2018-01-14">
+  <title>Concepts</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="reveal.js/css/reveal.css">
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; position: absolute; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; }
+pre.numberSource a.sourceLine:empty
+  { position: absolute; }
+pre.numberSource a.sourceLine::before
+  { content: attr(data-line-number);
+    position: absolute; left: -5em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <link rel="stylesheet" href="reveal.js/css/theme/solarized.css" id="theme">
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide">
+  <h1 class="title">Concepts</h1>
+  <p class="author">李嘉豪 毕昊阳 袁牧</p>
+  <p class="date">January 14, 2018</p>
+</section>
+
+<section class="slide level1">
+
+<h2 id="泛型编程">泛型编程</h2>
+<p>泛型编程是指程序设计中对还未指定的类型编写算法，在指定类型后才 实例化的编程模式。泛型编程的好处是可以大量减少重复的代码，提高 程序员的效率。</p>
+</section>
+<section class="slide level1">
+
+<h2 id="c语言中的泛型编程">C语言中的泛型编程</h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode c"><code class="sourceCode c"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="dt">void</span> qsort(<span class="dt">void</span>* base, <span class="dt">size_t</span> num, <span class="dt">size_t</span> size,</a>
+<a class="sourceLine" id="cb1-2" data-line-number="2">           <span class="dt">int</span> (*compar)(<span class="dt">const</span> <span class="dt">void</span>*, <span class="dt">const</span> <span class="dt">void</span>*));</a></code></pre></div>
+<p><code>size</code>指定了每个元素的宽度，传入的<code>compar</code>函数在函数体里 将元素解释成指定的类型，从而正确完成较。</p>
+</section>
+<section class="slide level1">
+
+<h3 id="缺点">缺点</h3>
+<ul>
+<li>使用强制类型转换使得类型完全无法检查，使用者甚至不能保证传入了数组</li>
+<li><code>compar</code>函数仍然无法泛型</li>
+</ul>
+</section>
+<section class="slide level1">
+
+<h3 id="原因">原因</h3>
+<p>c语言没有提供显式泛型机制，由于弱类型语言的特性，程序员可以随意解释变量 从而能实现类似的效果</p>
+</section>
+<section class="slide level1">
+
+<h2 id="c中的泛型编程">C++中的泛型编程</h2>
+</section>
+<section class="slide level1">
+
+<h3 id="理想的泛型实现">理想的泛型实现</h3>
+<ol type="1">
+<li>高通用性/良好的表达能力</li>
+<li>比起手写代码不会带来额外开销</li>
+<li>良好的接口定义</li>
+</ol>
+</section>
+<section class="slide level1">
+
+<h3 id="现实的模板">现实的模板</h3>
+<ol type="1">
+<li>图灵完全</li>
+<li>编写效率高于普通程序</li>
+<li>肮脏的接口</li>
+</ol>
+</section>
+<section class="slide level1">
+
+<h2 id="template-101">Template 101</h2>
+</section>
+<section class="slide level1">
+
+<h3 id="语法">语法</h3>
+<div class="sourceCode" id="cb2"><pre class="sourceCode cpp"><code class="sourceCode cpp"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="kw">template</span> &lt;参数列表&gt; 声明</a></code></pre></div>
+<p>参数列表中的形参可以是类型形参，也可以是非类型形参</p>
+</section>
+<section class="slide level1">
+
+<h3 id="例子">例子</h3>
+<div class="sourceCode" id="cb3"><pre class="sourceCode cpp"><code class="sourceCode cpp"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="kw">enum</span> school {</a>
+<a class="sourceLine" id="cb3-2" data-line-number="2">    ZJU,</a>
+<a class="sourceLine" id="cb3-3" data-line-number="3">    USTC,</a>
+<a class="sourceLine" id="cb3-4" data-line-number="4">    ...</a>
+<a class="sourceLine" id="cb3-5" data-line-number="5">};</a>
+<a class="sourceLine" id="cb3-6" data-line-number="6"></a>
+<a class="sourceLine" id="cb3-7" data-line-number="7"><span class="kw">template</span> &lt;<span class="kw">typename</span> GPAType, <span class="kw">enum</span> school m&gt;</a>
+<a class="sourceLine" id="cb3-8" data-line-number="8"><span class="dt">void</span> unify_GPA(T x) {}</a></code></pre></div>
+<p>这里<code>typename T</code>是类型形参</p>
+<p><code>enum school m</code>是非类型形参</p>
+</section>
+<section class="slide level1">
+
+<h3 id="实例化">实例化</h3>
+<div class="sourceCode" id="cb4"><pre class="sourceCode cpp"><code class="sourceCode cpp"><a class="sourceLine" id="cb4-1" data-line-number="1">f&lt;<span class="dt">double</span>, USTC&gt;(<span class="fl">4.3</span>);</a></code></pre></div>
+<p>已指定、推导出或从默认模板实参获得所有模板实参时，函数参数列表中每次模板形参的使用都会被替换成对应的模板实参。</p>
+</section>
+<section class="slide level1">
+
+<h3 id="报错">报错</h3>
+<div class="sourceCode" id="cb5"><pre class="sourceCode cpp"><code class="sourceCode cpp"><a class="sourceLine" id="cb5-1" data-line-number="1"><span class="kw">class</span> course {</a>
+<a class="sourceLine" id="cb5-2" data-line-number="2">    <span class="bu">std::</span>string name;</a>
+<a class="sourceLine" id="cb5-3" data-line-number="3">    <span class="dt">int</span> credit;</a>
+<a class="sourceLine" id="cb5-4" data-line-number="4">};</a>
+<a class="sourceLine" id="cb5-5" data-line-number="5"></a>
+<a class="sourceLine" id="cb5-6" data-line-number="6"><span class="bu">std::</span>vector&lt;course&gt; my_course;</a>
+<a class="sourceLine" id="cb5-7" data-line-number="7"><span class="dt">int</span> total_credits =</a>
+<a class="sourceLine" id="cb5-8" data-line-number="8">    <span class="bu">std::</span>accumulate(my_course.begin(), my_course.end(), <span class="dv">0</span>);</a></code></pre></div>
+</section>
+<section class="slide level1">
+
+<p><img data-src="./pic/01.png" width="400" /></p>
+<p>模板实际上相当于自动的代码生成</p>
+<p>将模板声明中的形参替换为实参</p>
+</section>
+<section class="slide level1">
+
+<h3 id="concepts的引入">concepts的引入</h3>
+<p>如果在编译模板实例化一开始就检查<code>class course</code>和<code>&lt;integer&gt;</code>是否有<code>operator+</code>函数，那么就可以产出更加高效的错误日志</p>
+</section>
+<section class="slide level1">
+
+<h2 id="concepts-101">concepts 101</h2>
+</section>
+<section class="slide level1">
+
+<h3 id="语法-1">语法</h3>
+<pre><code>template &lt;template-parameter-list&gt;
+concept concept-name = constraint-expression;</code></pre>
+</section>
+<section class="slide level1">
+
+<h3 id="九种限制类型">九种限制类型</h3>
+<ul>
+<li>合取限制</li>
+<li>析取限制</li>
+<li>断言限制</li>
+<li>表达式限制</li>
+<li>类型限制</li>
+<li>隐式转换限制</li>
+<li>参数推导限制</li>
+<li>异常限制</li>
+<li>参数化限制</li>
+</ul>
+</section>
+<section class="slide level1">
+
+<h3 id="合取限制">合取限制</h3>
+<p>任意两个限制P和Q的合取是P &amp;&amp; Q</p>
+<p>当且仅当P、Q都被满足时它才被满足</p>
+</section>
+<section class="slide level1">
+
+<h3 id="析取限制">析取限制</h3>
+<p>任意两个限制P和Q的析取是P || Q</p>
+<p>P、Q中任意一者被满足它都被满足</p>
+</section>
+<section class="slide level1">
+
+<h3 id="断言限制">断言限制</h3>
+<p>断言限制是个类型为<code>bool</code>的表达式</p>
+<p>当且仅当它的值是1的时候才被满足</p>
+</section>
+<section class="slide level1">
+
+<h3 id="表达式限制">表达式限制</h3>
+<p>表达式限制将会替换模板中的参数到表达式中</p>
+<p>只有替换成功才会被满足 如：</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode cpp"><code class="sourceCode cpp"><a class="sourceLine" id="cb7-1" data-line-number="1"><span class="kw">template</span> &lt;<span class="kw">typename</span> T&gt;</a>
+<a class="sourceLine" id="cb7-2" data-line-number="2">concept <span class="dt">bool</span> C = requires (T t) { ++t; };</a></code></pre></div>
+<p>只有++t合法时C才被满足</p>
+</section>
+<section class="slide level1">
+
+<h3 id="类型限制">类型限制</h3>
+<p>类型限制通过替换模板参数进行类型构造</p>
+<p>只有替换后的类型规范时才满足 如：</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode cpp"><code class="sourceCode cpp"><a class="sourceLine" id="cb8-1" data-line-number="1"><span class="kw">template</span> &lt;<span class="kw">typename</span> T&gt;</a>
+<a class="sourceLine" id="cb8-2" data-line-number="2">concept <span class="dt">bool</span> C = requires () { <span class="kw">typename</span> T::type; };</a></code></pre></div>
+</section>
+<section class="slide level1">
+
+<h3 id="隐式转换限制">隐式转换限制</h3>
+<p>隐式转换限制E只有能被隐式</p>
+<p>转化到T时才能满足限制，如：</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode cpp"><code class="sourceCode cpp"><a class="sourceLine" id="cb9-1" data-line-number="1"><span class="kw">template</span> &lt;<span class="kw">typename</span> T&gt;</a>
+<a class="sourceLine" id="cb9-2" data-line-number="2">concept <span class="dt">bool</span> C =</a>
+<a class="sourceLine" id="cb9-3" data-line-number="3">requires (T a, T b) {</a>
+<a class="sourceLine" id="cb9-4" data-line-number="4">    { a == b } -&gt; <span class="dt">bool</span>;</a>
+<a class="sourceLine" id="cb9-5" data-line-number="5">}</a></code></pre></div>
+<p>C中包含两个限制，分别是表达式限制和隐式转换限制</p>
+</section>
+<section class="slide level1">
+
+<h3 id="参数推导限制">参数推导限制</h3>
+<p>参数推导限制只有含占位符的类型T能成</p>
+<p>功推出表达式E的类型时才被满足，如：</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode cpp"><code class="sourceCode cpp"><a class="sourceLine" id="cb10-1" data-line-number="1"><span class="kw">template</span> &lt;<span class="kw">typename</span> T&gt;</a>
+<a class="sourceLine" id="cb10-2" data-line-number="2">concept <span class="dt">bool</span> C1 = <span class="kw">true</span>;</a>
+<a class="sourceLine" id="cb10-3" data-line-number="3"></a>
+<a class="sourceLine" id="cb10-4" data-line-number="4"><span class="kw">template</span> &lt;<span class="kw">typename</span> T&gt;</a>
+<a class="sourceLine" id="cb10-5" data-line-number="5">concept <span class="dt">bool</span> C() {</a>
+<a class="sourceLine" id="cb10-6" data-line-number="6">    <span class="cf">return</span> requires(T t) {</a>
+<a class="sourceLine" id="cb10-7" data-line-number="7">        {*t} -&gt; <span class="bu">std::</span>pair&lt;C1&amp;, <span class="kw">auto</span>&gt;;</a>
+<a class="sourceLine" id="cb10-8" data-line-number="8">    };</a>
+<a class="sourceLine" id="cb10-9" data-line-number="9">}</a></code></pre></div>
+</section>
+<section class="slide level1">
+
+<h3 id="异常限制">异常限制</h3>
+<p>异常限制只有一个表达式E满足noexcept(E)时才被满足</p>
+</section>
+<section class="slide level1">
+
+<h3 id="参数化限制">参数化限制</h3>
+<p>参数化限制声明了一些列参数，叫做限制变量</p>
+<p>它们在requires的参数列表中被声明</p>
+<p>它的操作数被定义为一系列限制的合取</p>
+</section>
+<section class="slide level1">
+
+<h3 id="参数化限制-1">参数化限制</h3>
+<div class="sourceCode" id="cb11"><pre class="sourceCode cpp"><code class="sourceCode cpp"><a class="sourceLine" id="cb11-1" data-line-number="1"><span class="kw">template</span> &lt;<span class="kw">typename</span> T&gt;</a>
+<a class="sourceLine" id="cb11-2" data-line-number="2">concept <span class="dt">bool</span> Eq =</a>
+<a class="sourceLine" id="cb11-3" data-line-number="3">requires (T a, T b) { </a>
+<a class="sourceLine" id="cb11-4" data-line-number="4">    a == b;</a>
+<a class="sourceLine" id="cb11-5" data-line-number="5">    a != b;</a>
+<a class="sourceLine" id="cb11-6" data-line-number="6">};</a></code></pre></div>
+<p>只有参数类型进行替换后仍然规范</p>
+<p>并且操作数都满足时参数化限制才满足</p>
+</section>
+<section class="slide level1">
+
+<h3 id="定义concepts">定义concepts</h3>
+<p>使用<code>concept</code>和<code>requires</code>关键字就可以定义concepts</p>
+</section>
+<section class="slide level1">
+
+<h3 id="使用concepts">使用concepts</h3>
+<p>使用concepts时也需要使用requires语句</p>
+<p>这里requires语句用来指定模板参数的限制</p>
+</section>
+<section class="slide level1">
+
+<h3 id="使用concepts-1">使用concepts</h3>
+<div class="sourceCode" id="cb12"><pre class="sourceCode cpp"><code class="sourceCode cpp"><a class="sourceLine" id="cb12-1" data-line-number="1"><span class="kw">template</span> &lt;<span class="kw">typename</span> T&gt;</a>
+<a class="sourceLine" id="cb12-2" data-line-number="2">requires Eq&lt;T&gt;</a>
+<a class="sourceLine" id="cb12-3" data-line-number="3"><span class="dt">bool</span> f(T t);</a></code></pre></div>
+<p>它定义了一个模板函数f，模板参数类型T必须满足Eq这个concept所定义的限制才能被实例化成功</p>
+</section>
+<section class="slide level1">
+
+<h4 id="缩写形式">缩写形式</h4>
+<div class="sourceCode" id="cb13"><pre class="sourceCode cpp"><code class="sourceCode cpp"><a class="sourceLine" id="cb13-1" data-line-number="1"><span class="kw">template</span> &lt;Eq T&gt;</a>
+<a class="sourceLine" id="cb13-2" data-line-number="2"><span class="dt">bool</span> f(T t);</a>
+<a class="sourceLine" id="cb13-3" data-line-number="3"></a>
+<a class="sourceLine" id="cb13-4" data-line-number="4">Eq{T} <span class="dt">bool</span> f(T t);</a>
+<a class="sourceLine" id="cb13-5" data-line-number="5"></a>
+<a class="sourceLine" id="cb13-6" data-line-number="6"><span class="kw">template</span>&lt;<span class="kw">typename</span> T&gt;</a>
+<a class="sourceLine" id="cb13-7" data-line-number="7"><span class="dt">bool</span> f(T t) requires Eq&lt;T&gt;;</a>
+<a class="sourceLine" id="cb13-8" data-line-number="8"></a>
+<a class="sourceLine" id="cb13-9" data-line-number="9"><span class="dt">bool</span> f(Eq);</a></code></pre></div>
+</section>
+<section class="slide level1">
+
+<h2 id="将限制翻译到模板">将限制翻译到模板</h2>
+<p>我们尝试用模板来达到一样的功能</p>
+</section>
+<section class="slide level1">
+
+<h4 id="基础模板">基础模板</h4>
+<div class="sourceCode" id="cb14"><pre class="sourceCode cpp"><code class="sourceCode cpp"><a class="sourceLine" id="cb14-1" data-line-number="1"><span class="kw">template</span> &lt;<span class="kw">typename</span> ...&gt;</a>
+<a class="sourceLine" id="cb14-2" data-line-number="2"><span class="kw">using</span> <span class="dt">void_t</span> = <span class="dt">void</span>;</a>
+<a class="sourceLine" id="cb14-3" data-line-number="3"></a>
+<a class="sourceLine" id="cb14-4" data-line-number="4"><span class="kw">template</span> &lt;<span class="kw">typename</span> T, <span class="kw">typename</span> = <span class="dt">void</span>&gt;</a>
+<a class="sourceLine" id="cb14-5" data-line-number="5"><span class="kw">struct</span> DIP_concept : <span class="bu">std::</span>false_type { };</a>
+<a class="sourceLine" id="cb14-6" data-line-number="6"></a>
+<a class="sourceLine" id="cb14-7" data-line-number="7"><span class="kw">template</span> &lt;<span class="kw">typename</span> T&gt;</a>
+<a class="sourceLine" id="cb14-8" data-line-number="8"><span class="kw">struct</span> DIY_concept&lt;T, <span class="dt">void_t</span>&lt;填入限制&gt;&gt; : <span class="bu">std::</span>true_type { };</a></code></pre></div>
+</section>
+<section class="slide level1">
+
+<h4 id="合取限制-1">合取限制</h4>
+<p>模板别名P和Q的合取可以直接将它们加入到<code>void_t</code>的参数列表中。 而类<code>_P</code>和<code>_Q</code>的合取可以表示为将<code>std::enable_if&lt;_P::value &amp;&amp; _Q::value&gt;::type</code> 加入到<code>void_t</code>的参数列表中</p>
+</section>
+<section class="slide level1">
+
+<h4 id="析取限制-1">析取限制</h4>
+<p>模板别名不能表示析取。类<code>_P</code>和<code>_Q</code>的析取可以表示为将</p>
+<p><code>std::enable_if&lt;_P::value || _Q::value&gt;::type</code>加入到<code>void_t</code>的参数列表中</p>
+</section>
+<section class="slide level1">
+
+<h4 id="断言限制-1">断言限制</h4>
+<p>将<code>std::enable_if&lt;P&gt;::type</code>加入到</p>
+<p><code>void_t</code>的参数列表中来增加<code>P</code>的断言限制</p>
+</section>
+<section class="slide level1">
+
+<h4 id="表达式限制-1">表达式限制</h4>
+<p>将<code>decltype(E)</code>加入到<code>void_t</code></p>
+<p>的参数中来增加<code>E</code>的表达式限制</p>
+</section>
+<section class="slide level1">
+
+<h4 id="类型限制-1">类型限制</h4>
+<p>将<code>T</code>加入到<code>void_t</code>的参数列表中来增加<code>T</code>的类型限制</p>
+</section>
+<section class="slide level1">
+
+<h4 id="隐式转换限制-1">隐式转换限制</h4>
+<p>任一隐式转换限制<code>{ E } -&gt; T</code>可以将<code>decltype(static_cast&lt;T&gt;(E))</code></p>
+<p>加入到<code>void_t</code>的参数列表中来增加类型限制</p>
+</section>
+<section class="slide level1">
+
+<h4 id="参数推导限制-1">参数推导限制</h4>
+<p>由于<code>auto</code>当前的推导功能有限</p>
+<p>所以无法支持参数推导限制</p>
+</section>
+<section class="slide level1">
+
+<h4 id="异常限制-1">异常限制</h4>
+<p>任一异常限制<code>noexcept(E)</code>可以将<code>std::enable_if&lt;noexcept(E)&gt;::type</code></p>
+<p>加入到<code>void_t</code>的参数列表中来增加异常限制</p>
+</section>
+<section class="slide level1">
+
+<h4 id="参数化限制-2">参数化限制</h4>
+<p>参数<code>T t</code>可以用<code>static_cast&lt;T&gt;(*(T*)0)</code>来进行表示</p>
+<p>这样的缺点是不能有名字，不过能起到等价的效果</p>
+</section>
+<section class="slide level1">
+
+<p>为什么要作为语言扩展？</p>
+</section>
+<section class="slide level1">
+
+<h2 id="concepts作为模板的接口">Concepts作为模板的接口</h2>
+</section>
+<section class="slide level1">
+
+<h3 id="使用concepts设计accumulate">使用Concepts设计accumulate</h3>
+<div class="sourceCode" id="cb15"><pre class="sourceCode cpp"><code class="sourceCode cpp"><a class="sourceLine" id="cb15-1" data-line-number="1"><span class="kw">template</span> &lt;<span class="kw">class</span> InputIt, <span class="kw">class</span> T&gt;</a>
+<a class="sourceLine" id="cb15-2" data-line-number="2">T accumulate(InputIt first, InputIt last, T init);</a></code></pre></div>
+<p>accumulate的声明</p>
+</section>
+<section class="slide level1">
+
+<p>应该如何设计concept？</p>
+</section>
+<section class="slide level1">
+
+<h3 id="accumulable设计">Accumulable设计</h3>
+<div class="sourceCode" id="cb16"><pre class="sourceCode cpp"><code class="sourceCode cpp"><a class="sourceLine" id="cb16-1" data-line-number="1">requires(InputIt it, T t) {</a>
+<a class="sourceLine" id="cb16-2" data-line-number="2">    { (*it) + t } -&gt; T;</a>
+<a class="sourceLine" id="cb16-3" data-line-number="3">}</a></code></pre></div>
+</section>
+<section class="slide level1">
+
+<h3 id="accumulable使用">Accumulable使用</h3>
+<div class="sourceCode" id="cb17"><pre class="sourceCode cpp"><code class="sourceCode cpp"><a class="sourceLine" id="cb17-1" data-line-number="1">Accumulable{InputIt, T}</a>
+<a class="sourceLine" id="cb17-2" data-line-number="2">T accumulate(InputIt first, InputIt last, T init);</a></code></pre></div>
+</section>
+<section class="slide level1">
+
+<h3 id="concepts作为占位符">Concepts作为占位符</h3>
+<div class="sourceCode" id="cb18"><pre class="sourceCode cpp"><code class="sourceCode cpp"><a class="sourceLine" id="cb18-1" data-line-number="1">Sortable x = f(y)</a>
+<a class="sourceLine" id="cb18-2" data-line-number="2"></a>
+<a class="sourceLine" id="cb18-3" data-line-number="3"><span class="kw">auto</span> f(Container) -&gt; Sortable;</a></code></pre></div>
+</section>
+<section class="slide level1">
+
+<h3 id="使用concepts设计的优点">使用Concepts设计的优点</h3>
+<ol type="1">
+<li>接口易懂</li>
+<li>报错信息更友好</li>
+</ol>
+</section>
+<section class="slide level1">
+
+<h3 id="concepts作为类型设计的辅助">Concepts作为类型设计的辅助</h3>
+<p>Concepts配合<code>static_assert</code>可以测试类型设计</p>
+<div class="sourceCode" id="cb19"><pre class="sourceCode cpp"><code class="sourceCode cpp"><a class="sourceLine" id="cb19-1" data-line-number="1"><span class="kw">static_assert</span>&lt;Number&lt;MyType::<span class="dt">value_type</span>&gt;&gt;</a>
+<a class="sourceLine" id="cb19-2" data-line-number="2"><span class="kw">static_assert</span>&lt;Sortable&lt;MyType&gt;&gt;</a></code></pre></div>
+</section>
+<section class="slide level1">
+
+<h3 id="总结">总结</h3>
+<p>concepts的设计契合了C++的设计思想:</p>
+<ul>
+<li>为用户提供了良好的接口</li>
+<li>语义上一致</li>
+<li>不让用户去做重复劳动</li>
+<li>零运行时开销</li>
+<li>设计简单</li>
+</ul>
+</section>
+<section id="thank-you" class="slide level1">
+<h1>Thank You!</h1>
+<style type="text/css">
+@font-face {
+    font-family: "Inconsolata";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Inconsolata"), url("http://themes.googleusercontent.com/static/fonts/inconsolata/v3/BjAYBlHtW3CJxDcjzrnZCIbN6UDyHWBl620a-IRfuBk.woff") format("woff");
+}
+
+.reveal code {
+    font-family: Inconsolata;
+}
+
+.reveal a {
+    text-transform: initial;
+}
+.reveal pre {
+    font-family: Inconsolata;
+    font-size: 30px;
+}
+
+#fiveup code {
+    font-family: Inconsolata;
+    font-size: 20px;
+}
+
+#columns ul {
+  width:1300px;
+  overflow:hidden;
+}
+#columns li {
+  float:left;
+  display:inline;
+}
+
+#double li  { width:50%; }
+#triple li  { width:33.333%; }
+#fourup li  { width:25%; }
+#fiveup li  { width:20%; }
+#sixup li   { width:16.666%; }
+
+#achv * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#achv .achievement-banner {
+  opacity: 0;
+  margin: 0 auto;
+  font-size: 350%;
+  width: 10em;
+  color: #efefef;
+  background: #3d4142;
+  border-radius: 10em;
+  position: relative;
+  padding: .125em;
+  min-height: 1.5em;
+  overflow: hidden;
+}
+.achievement-banner .achievement-icon {
+  border-radius: 10em;
+  position: relative;
+  background: #000;
+  border: .125em solid #656766;
+  border-top-color: #45ca3d;
+  height: 1.25em;
+  width: 1.25em;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  z-index: 100;
+}
+.achievement-banner .achievement-icon .icon {
+  display: block;
+  border-radius: 10em;
+  border: 4px solid #000;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1em;
+  height: 1em;
+  line-height: 1;
+  z-index: 1000;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.achievement-banner .achievement-icon .icon .icon-trophy {
+  font-size: 75%;
+  line-height: 1;
+  position: relative;
+  top: -.08em;
+}
+.achievement-banner .achievement-text {
+  font-family: "Trebuchet MS";
+  text-shadow: 0 2px 0 #000;
+  position: absolute;
+  top: .1em;
+  left: 4em;
+  font-size: 50%;
+  line-height: 1;
+  width: 70%;
+}
+.achievement-banner .achievement-notification {
+  margin: 0;
+}
+.achievement-banner .achievement-name {
+  margin: 0;
+}
+
+/* Generated content */
+.achievement-banner .achievement-icon:before,
+.achievement-banner .achievement-icon:after,
+.achievement-banner .achievement-icon .icon:before,
+.achievement-banner .achievement-icon .icon:after {
+        content: "";
+        display: block;
+        position: absolute;
+}
+
+.achievement-banner .achievement-icon:before{
+  border-radius: 12em;
+  z-index: -100;
+  background: transparent;
+  border: 4px solid #000;
+  top: -.175em;
+  left: -.175em;
+  right: -.175em;
+  bottom: -.175em;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* Bars */
+.achievement-banner .achievement-icon .icon:before,
+.achievement-banner .achievement-icon .icon:after {
+  width: 150%;
+  height: .125em;
+  background: #000;
+  border-radius: .05em;
+  z-index: -10;
+  top: 42.5%;
+  left: -25%;
+}
+
+.achievement-banner .achievement-icon .icon:before {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+/* Animations */
+
+/* open-close-banner */
+@-webkit-keyframes open-close-banner {
+  0% {width: 1.5em; opacity: 0;}
+  2% {width: 1.5em; opacity: 1;}
+  8% {width: 9em;}
+  80% {width: 9em;}
+  90% {width: 1.5em; opacity: 1;
+    -webkit-transform: rotate(0deg);
+  }
+  98% {
+    width: 1.5em;
+    -webkit-transform: rotate(720deg);
+  }
+  100% {width: 1.5em; opacity: 0;}
+}
+@-moz-keyframes open-close-banner {
+  0% {width: 1.5em; opacity: 0;}
+  2% {width: 1.5em; opacity: 1;}
+  8% {width: 9em;}
+  80% {width: 9em;}
+  90% {
+    width: 1.5em;
+    opacity: 1;
+    -moz-transform: rotate(0deg);
+  }
+  98% {
+    width: 1.5em;
+    -moz-transform: rotate(720deg);
+  }
+  100% {width: 1.5em; opacity: 0;}
+}
+@keyframes open-close-banner {
+  0% {width: 1.5em; opacity: 0;}
+  2% {width: 1.5em; opacity: 1;}
+  8% {width: 9em;}
+  80% {width: 9em;}
+  90% {
+    width: 1.5em;
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+  98% {
+    width: 1.5em;
+    transform: rotate(720deg);
+  }
+  100% {width: 1.5em; opacity: 0;}
+}
+
+/* border-top-pulse */
+@-webkit-keyframes border-top-pulse {
+  0% {border-top-color: #656766;}
+  40% {border-top-color: #ffffff;}
+  80% {border-top-color: #00ff00;}
+  100% {border-top-color: #45ca3d;}
+}
+@-moz-keyframes border-top-pulse {
+  0% {border-top-color: #656766;}
+  40% {border-top-color: #ffffff;}
+  80% {border-top-color: #00ff00;}
+  100% {border-top-color: #45ca3d;}
+}
+@keyframes border-top-pulse {
+  0% {border-top-color: #656766;}
+  40% {border-top-color: #ffffff;}
+  80% {border-top-color: #00ff00;}
+  100% {border-top-color: #45ca3d;}
+}
+@-webkit-keyframes fade-in-text {
+  0% {opacity: 0;}
+  80% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@-moz-keyframes fade-in-text {
+  0% {opacity: 0;}
+  80% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@keyframes fade-in-text {
+  0% {opacity: 0;}
+  80% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@-webkit-keyframes fade-out-text {
+  0% {opacity: 1;}
+  65% {opacity: 1;}
+  100% {opacity: 0;}
+}
+@-moz-keyframes fade-out-text {
+  0% {opacity: 1;}
+  65% {opacity: 1;}
+  100% {opacity: 0;}
+}
+@keyframes fade-out-text {
+  0% {opacity: 1;}
+  65% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+.achievement-banner {
+  -webkit-animation: open-close-banner 5s 1;
+  -moz-animation: open-close-banner 5s 1;
+  animation: open-close-banner 5s 1;
+}
+
+.achievement-banner .achievement-icon {
+  /* Make border-top pulse. */
+  -webkit-animation: border-top-pulse 1.25s 2;
+  -moz-animation: border-top-pulse 1.25s 2;
+  animation: border-top-pulse 1.25s 2;
+}
+/* fade-in-text */
+.achievement-banner .achievement-text {
+  -webkit-animation: fade-in-text .5s 1;
+  -moz-animation: fade-in-text .5s 1;
+  animation: fade-in-text .5s 1;
+}
+
+.achievement-banner .icon-trophy {
+  -webkit-animation: fade-out-text 5s 1;
+  -moz-animation: fade-out-text 5s 1;
+  animation: fade-out-text 5s 1;
+}
+</style>
+</section>
+    </div>
+  </div>
+
+  <script src="reveal.js/lib/js/head.min.js"></script>
+  <script src="reveal.js/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Push each slide change to the browser history
+        history: true,
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
+          { src: 'reveal.js/plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+<script>
+    Reveal.configure({
+        controls: false,
+        history: false,
+        progress: false,
+        transition: 'none'
+    })
+</script>
+    </body>
+</html>

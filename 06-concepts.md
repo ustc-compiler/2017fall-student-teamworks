@@ -23,6 +23,30 @@ C++的一个扩展: concepts。项目的主要内容包括:
 *   袁牧: concepts实现机制
 *   毕昊阳: 模板元编程实现、concepts和其他语言对比
 
+## 小组交流
+
+### 第三组
+
+1.	给第三组成员提出了[建议](https://github.com/noirgif/ustc-compiler-pointer/issues/1)
+
+2.	在第三组成员的提醒下，修正了文档中示例代码的一些[错误](https://github.com/ustc-compiler-concepts/report/issues/3)
+
+### 第七组
+
+问了我们两个问题
+
+Q1: concepts使用时有遇到过什么问题
+
+A1: concepts的取名要有一定的意义，所以相似的concepts要取不一样的名字会比较麻烦。
+除此之外使用起来并不麻烦
+
+Q2: 在concepts的设计方面，你们有没有觉得什么可以改进的
+
+A2: 1.缩写形式的Concepts感觉并没有优雅地融入语言之中，但是想想也没有什么比较好的替代方式。
+2.`requires`同时有定义和使用的功能，感觉不太一致
+
+我们也向第七组提了一些问题
+
 ## 进展
 
 #### 总体进展
@@ -41,9 +65,13 @@ C++的一个扩展: concepts。项目的主要内容包括:
 我们会继续同其它组的成员互相交流和评价，以便进一步完善报告。
 也欢迎各位同学用任何方式来提出改进意见。
 
+#### 1月13日
+
+最终报告编写完成，编译成`HTML`
+
 #### 1月3日
 
-修正了文档中示例代码的一些错误
+在第三组成员的提示下，修正了文档中示例代码的一些[错误](https://github.com/ustc-compiler-concepts/report/issues/3)
 
 #### 1月1日
 
@@ -58,6 +86,10 @@ C++的一个扩展: concepts。项目的主要内容包括:
 #### 12月23日
 
 改进了公共页面的说明
+
+#### 12月15日
+
+给第三组成员提出了[建议](https://github.com/noirgif/ustc-compiler-pointer/issues/1)
 
 #### 12月7日
 
