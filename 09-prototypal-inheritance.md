@@ -73,15 +73,15 @@ Though `Python` itself already has some properties of Prototypal Inheritance(e.g
 
     Lots of comments has been added to python codes. [nvagus]
   * PPT for report
-  
+
     The PDF version of PPT for report has been added. [Smart-Hypercube]
 
 
 
-## To-do List
+<!--## To-do List
 - Continue to read the paper, *Classifying Prototype-based Programming Language*, study several programming languages the paper has mentioned, and finally sort out how prototype-based languages are influenced by other languages before. [songchaow]
 
-- The [Readme.md](https://github.com/compiler-teamwork-group09/documents/blob/master/README.md) file in the document repository is yet lacking structural organization, though lots of useful points are available from it. We plan to reorganize the document later.
+- The [Readme.md](https://github.com/compiler-teamwork-group09/documents/blob/master/README.md) file in the document repository is yet lacking structural organization, though lots of useful points are available from it. We plan to reorganize the document later.-->
 
 ## References
 - C.Dony, J.Malenfant, D.Bardou(1999). *Classifying Prototype-based Programming Language*. 
