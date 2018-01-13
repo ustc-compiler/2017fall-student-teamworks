@@ -26,6 +26,24 @@
 * qq
 * 线下图书馆讨论
 
+### 组间交流：
+
+#### 回答问题：
+
+* question1: 虚继承和C++直接继承有什么区别，可以简单说说吗？(07组提问)
+* answer1:由于共享所以不必要在对象内存中保存多份虚基类子对象的拷贝，这样较之多继承节省空间。虚拟继承与普通继承不同的是，虚拟继承可以防止出现diamond继承时，一个派生类中同时出现了两个基类的子对象。也就是说，为了保证这一点，在虚拟继承情况下，基类子对象的布局是不同于普通继承的。因此，它需要多出一个指向基类子对象的指针。
+* question2:看了看你们文档，有个疑惑，“从虚继承的基类转化为派生类则不可行”在C++中是如何解决的？（09组提问）
+* answer2:https://github.com/elvinlife/virtual-inheritance/issues/5
+* question3:关于《Space and time-efficient memory layout for multiple inheritance》这篇文章中的优化内存布局的三个步骤，具体而言，有哪些可能的内存和时间上优化?(14组提问）
+* answer3:https://github.com/elvinlife/virtual-inheritance/issues/6
+
+#### 提问：
+
+* question1:原型继承语言相对类继承语言而言有何缺点呢？（提问09组）
+* answer1:从设计上说，原型继承语言中的一切事物均为对象，这对让初学者感到不适应。在实现原型继承时，该语言往往得使用解释性的语言和动态弱类型系统，这两点造成了程序执行效率变低和安全性的降低。而类继承语言，则完全可以做到编译执行和静态强类型。
+
+
+
 ## 12.23 commit
 
 ### 当前进展：
@@ -50,9 +68,17 @@
 
 ### 下一步计划：
 
-* 详解虚继承中的控制权限，构造函数与析构函数的原理
+* 详解构造函数与析构函数的原理
 * 阅读论文《Space and time-efficient memory layout for multiple inheritance》，看一下具体的多继承内存空间优化
 * 准备答辩
+
+## 1.13 commit
+
+当前进展：
+
+* 描述了虚继承中构造和析构函数的具体原理
+* 阅读论文《Space and time-efficient memory layout for multiple inheritance》，详解该论文中是如何进行虚继承存储空间优化的
+* 准备答辩ppt
 
 ### 仓库链接：
 
