@@ -43,5 +43,5 @@ https://github.com/nemo294840653/STL-TEAMWORK.git
 
 参考文献：《STL源码剖析》
 
-## 1月13日
+## 1月13日提交内容
 完成了对三种序列式容器的源码分析，完成了vector和list的源码仿写。内容详见位于仓库Sources-analysis文件夹中的文档，以及imitative-writing文件夹中的代码。
