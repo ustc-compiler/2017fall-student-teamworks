@@ -57,11 +57,37 @@ Though `Python` itself already has some properties of Prototypal Inheritance(e.g
   
     nvagus reorganized the structure of this project.
 
+- By Jan 13rd, 2018
 
-## To-do List
+  Discussion at Library in West Campus for 1 hour.
+
+  Discussion on QQ for all day.
+
+  * Documents:
+
+    The report for this project has been published in [document repository](https://github.com/compiler-teamwork-group09/documents). [songchaow]
+
+  * [**python3-proto**](https://github.com/compiler-teamwork-group09/python3-proto) project:
+    
+    The [README.md](https://github.com/compiler-teamwork-group09/documents/blob/master/README.md) has been added. [nvagus]]
+
+    Lots of comments has been added to python codes. [nvagus]
+  * PPT for report
+
+    The PDF version of PPT for report has been added. [Smart-Hypercube]
+
+  * Discussion with other groups:
+
+    We asked questions about technical details of other teams' work and received enthusiastic responses from Groups 4 and 13.
+
+    See the issue pages of their repos for details.
+
+
+
+<!--## To-do List
 - Continue to read the paper, *Classifying Prototype-based Programming Language*, study several programming languages the paper has mentioned, and finally sort out how prototype-based languages are influenced by other languages before. [songchaow]
 
-- The [Readme.md](https://github.com/compiler-teamwork-group09/documents/blob/master/README.md) file in the document repository is yet lacking structural organization, though lots of useful points are available from it. We plan to reorganize the document later.
+- The [Readme.md](https://github.com/compiler-teamwork-group09/documents/blob/master/README.md) file in the document repository is yet lacking structural organization, though lots of useful points are available from it. We plan to reorganize the document later.-->
 
 ## References
 - C.Dony, J.Malenfant, D.Bardou(1999). *Classifying Prototype-based Programming Language*. 
