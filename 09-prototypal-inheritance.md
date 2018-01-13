@@ -76,6 +76,12 @@ Though `Python` itself already has some properties of Prototypal Inheritance(e.g
 
     The PDF version of PPT for report has been added. [Smart-Hypercube]
 
+  * Discussion with other groups:
+
+    We asked questions about technical details of other teams' work and received enthusiastic responses from Groups 4 and 13.
+
+    See the issue pages of their repos for details.
+
 
 
 <!--## To-do List
