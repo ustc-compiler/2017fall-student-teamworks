@@ -45,3 +45,7 @@ https://github.com/nemo294840653/STL-TEAMWORK.git
 
 ## 1月13日提交内容
 完成了对三种序列式容器的源码分析，完成了vector和list的源码仿写。内容详见位于仓库Sources-analysis文件夹中的文档，以及imitative-writing文件夹中的代码。
+
+任务分工：王新主要负责源码仿写部分，郑值主要负责源码分析和制作报告ppt。
+
+成员讨论方式：QQ线上讨论，总时间约一小时。
