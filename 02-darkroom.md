@@ -57,6 +57,8 @@ Read the related publication to get the basic concepts of Darkroom.
 * 01.01
 
  Decide the group and the topic to discussion
+
+ * 01.13
  
 * Total
 
@@ -91,7 +93,7 @@ Now we have know the working process of Darkroom, and get to know the background
  
  NNVM research
 
-**Updated on 1.3**
+**1.3**
 
 We get to know that Darkroom can not implement image pyramid(and some other image processing algorithms) currently, which is a point for us to research into. We find that Halide, a language designed to write high-performance image processing code, is able to deal with image pyramid. This prompts us to compare these two language, and to find out the reason why Halide can implement image pyramid, and why Darkroom cannot so that we can have a deeper understanding on the limitation of Darkroom programming model.
 
@@ -101,20 +103,43 @@ The two questions above are the topics we are going to discussion with the other
 
 With a quick look on the source code, we find the part of implementation on scheduling and optimization.  
 
+**1.3-1.13**
+
+Discussed with Halide group(E1) and NNVM group(E4) 
+
+Test on Halide and Darkroom
+
+Read source code
+
+Comparison between NNVM and Darkroom
+
+
+**Updated on 1.13**
+
+We discussed with other groups to get information on Halide and NNVM. Then we compare Halide and Darkroom from many aspects to get the differences between them. We read through the source code and finally get the details of Darkroom. We experimented on Halide and NNVM, and measured the time consumed for a comparison. By intergroup discussion, we realized the general principle in language designing.
+
 ## TODO List
 - [x] More materials collection for a better understanding
 - [x] Halide research
 - [x] NNVM research
 - [x] Read the source code to get a rough sense of the implementation of Darkroom
-- [ ] The comparison to Halide and other similiar language
-- [ ] The application of Darkroom principle in NNVM
-- [ ] A closer look on the implementation of Darkroom optimization and scheduling.
+- [x] The comparison to Halide and other similiar language
+- [x] The application of Darkroom principle in NNVM
+- [x] A closer look on the implementation of Darkroom optimization and scheduling.
 
 
-## Problem
+## Problem and Solution
 1. We are not familiar with lua, which Darkroom is implemented with.
 
+Ignore the trivial, but get the main idea of Darkroom.
+
 2. The FPGA implementation is not available for us because of the lack of hardware support.
+
+We choose CPU as the test platform because Darkroom optimization is available on CPU.
+
+**Summary**
+
+In our teamwork, we start from Darkroom, read the publications and then run examples on CPU platform. Next, we skip the source code, find the point to discussion and research deeply on. Then, we discussion with outher groups, do experiment to get the straightforward comparison, and read the source code to understand the implementation of Darkroom. Finally, we not only get to know the Darkroom principle, but also make sense of the general principle of language designing.
 
 ## Links
 [Darkroom: Compiling High-Level Image Processing Code into Hardware Pipelines](http://darkroom-lang.org/darkroom14-low.pdf)
@@ -127,6 +152,6 @@ With a quick look on the source code, we find the part of implementation on sche
 
 [Pyramid (image processing) - Wikipedia](https://en.wikipedia.org/wiki/Pyramid_(image_processing))
 
-**To see our current progress**
+**To see our work**
 
 [Github Repository](https://github.com/Compiler-02)
