@@ -1,4 +1,4 @@
-# XLA
+# XLA Summary
 
 ## Project link
 
@@ -18,41 +18,11 @@ Detailed Reports are included in our [XLA-Report repository](https://github.com/
 
 In this project, we will do a small research on XLA, which covers in
 
-* What kind of acceleration can XLA do
-* How does XLA do it
-* Where does JIT and AOT came in
+- What kind of acceleration can XLA do
+- How does XLA do it
+- Where does JIT and AOT came in
 
-## Task Assignment
-
-### 宋小牛：Implementation of XLA, focusing on "How does XLA do it".
-
-1. Implemented interface and architecture of XLA.
-2. XLA working mechanism in TensorFlow.
-
-### 王若冰：Performance of XLA, focusing on "What kind of acceleration can XLA do".
-
-1. Measure the performance matrix of XLA.
-2. Doing profiling with XLA and propose some possible optimization for current XLA.
-
-### 陈翊辉：JIT and AOT in XLA, focusing on "Where does JIT and AOT came in"
-
-1. JIT and AOT working mechanism.
-2. How JIT and AOT applied in XLA and how they make the performance better.
-
-## Discussion
-
-### Online Discussion 
-
-Time: 				
-
-- Hard to do statistic. Approximately 3 hours.
-
-Accomplishment:		
-
-- Decide research goal and task assignment. 
-- Share study resources and documents. 
-
-## What we have done
+## Summary of Our Work
 
 ### 12.23 Commit
 
@@ -68,32 +38,24 @@ Accomplishment:
 - [x] Did some basic profiling with CUDA Profiling Tools Interface (CUPTI).
 - [x] Report the test and profiling we have done in the [repository](https://github.com/TensorflowXLABeginner/XLA-Report/tree/master/SecondCommitReports).
 
-## Problems
+### 1.13 Commit
 
-1. **Lack experience on TensorFlow and knowledge of deep learning.** This project needs us to learning and research about XLA which is a part of TensorFlow. However, three of us have little experience with TensorFlow and deep learning, which results in lots of background knowledge to learning before we can get started on XLA.
-2. **Little study resources and documents can be found about XLA.** There are, of course, huge amount of study resources about TensorFlow on the Internet. However, much of them mention little on the topic of XLA. So the learning and research of XLA in detail may need us to dig into its source code.   
+- [x] Build our XLA on multiple platform. Including CPU version on PC, GPU version by **CUDA 8.0** on PC (**Nvidia GTX 970M**), GPU version by CUDA 9.0 on high performance cluster (**Nvidia Tesla V100**), GPU version AOT compilation for x86-64 and **ARM**.
 
-## To Do
 
-### 12.23 Commit
+- [x] We have done full benchmark and profiling for JIT compilation on V100 cluster. Compiler optimization. [Link](https://github.com/TensorflowXLABeginner/XLA-Report/blob/master/JIT_Compilation/XLA%20JIT%20Benchmark.md)
+- [x] AOT compilation is used mainly on mobile platform, we have do research on AOT with AMD card and the usage of it. [See report.](https://github.com/TensorflowXLABeginner/XLA-Report/tree/master/AOT_Compilation)
+- [x] Boardcasting is widely used in XLA to provide more support for flexible matrix operation, research of it can be found in our repository. [Link](https://github.com/TensorflowXLABeginner/XLA-Report/tree/master/Broadcast)
+- [x] Communicate with team NNVM and team Darkroom. [Link](https://github.com/TensorflowXLABeginner/XLA-Report/tree/master/Communications)
+- [x] Made our [final report](https://github.com/TensorflowXLABeginner/XLA-Report/blob/master/Presentation/xla.pptx).
 
-- [ ] Start testing the XLA result and performance.
-- [ ] Learning the implementation of XLA in detail by viewing the source code.
+### Reference
 
-### 1.3 Commit
+[TensorFlow Programming](https://github.com/TensorflowXLABeginner/XLA-Report/blob/master/FirstCommitReports/Accelerated%20Linear%20Algebra%20Intro.md)
 
-- [ ] Do some benchmarks in more details.
-- [ ] Test and using profiling tools to do profiling.
-- [ ] Lots of idea will come out after we have done the job above, try to implement the ideas.
+[XLA Overview](https://github.com/TensorflowXLABeginner/XLA-Report/blob/master/FirstCommitReports/Accelerated%20Linear%20Algebra%20Intro.md)
 
-## Reference
+[XLA Just-in-time Compilation](https://github.com/TensorflowXLABeginner/XLA-Report/blob/master/FirstCommitReports/xla_Just-in-time%20compilation.md)
 
-[TensorFlow: Getting Started](https://www.tensorflow.org/get_started/)
+[XLA Ahead-of-time Compilation](https://www.tensorflow.org/performance/xla/tfcompile)
 
-[Deep learning with Tensorflow](https://www.packtpub.com/mapt/book/big_data_and_business_intelligence/9781786469786/9/ch09lvl1sec82/accelerated-linear-algebra)
-
-[XLA Overview](https://www.tensorflow.org/performance/xla/)
-
-[XLA - TensorFlow 编译器](http://developers.googleblog.cn/2017/03/xla-tensorflow.html)
-
-[XLA Source Code](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/compiler/xla)
