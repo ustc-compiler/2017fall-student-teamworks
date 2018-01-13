@@ -154,3 +154,22 @@ QQ群：30分钟
 [What’s the difference between concurrency and parallelism](http://joearms.github.io/2013/04/05/concurrent-and-parallel-programming.html)
 
 [Getting Started with the G1 Garbage Collector](http://www.oracle.com/webfolder/technetwork/tutorials/obe/java/G1GettingStarted/index.html)，[翻译文章](http://blog.csdn.net/renfufei/article/details/41897113)
+
+[Java垃圾回收的介绍](https://javapapers.com/java/java-garbage-collection-introduction/)    
+
+[Java垃圾回收的工作机制](https://javapapers.com/java/how-java-garbage-collection-works/)
+
+[Java垃圾回收的类型](https://javapapers.com/java/types-of-java-garbage-collectors/)  
+
+[Java垃圾回收的监测与分析](https://javapapers.com/java/java-garbage-collection-monitoring-and-analysis/)  
+
+[Visualvm-可视化VM](https://docs.oracle.com/javase/8/docs/technotes/guides/visualvm/)  
+
+[HotSpot实战](https://book.douban.com/subject/25847620/)  
+
+[Java堆的创建](http://www.importnew.com/17068.html)   
+
+[从持久代到metaspace](https://juejin.im/post/59e969ca51882561a05a3340)  
+
+[metaspace in java8](http://java-latte.blogspot.sg/2014/03/metaspace-in-java-8.html)  
+
