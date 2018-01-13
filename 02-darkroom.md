@@ -137,7 +137,7 @@ Ignore the trivial, but get the main idea of Darkroom.
 
 We choose CPU as the test platform because Darkroom optimization is available on CPU.
 
-**Summary**
+## Summary
 
 In our teamwork, we start from Darkroom, read the publications and then run examples on CPU platform. Next, we skip the source code, find the point to discussion and research deeply on. Then, we discussion with outher groups, do experiment to get the straightforward comparison, and read the source code to understand the implementation of Darkroom. Finally, we not only get to know the Darkroom principle, but also make sense of the general principle of language designing.
 
