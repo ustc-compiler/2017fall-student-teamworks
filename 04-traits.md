@@ -2,11 +2,11 @@
 ===
 
 ## 小组成员：
-姓名 | 身份 | github用户名  
---------- | --------  | ---------
-戢凯文| 队长 | [jikaiwen](https://github.com/jikaiwen)  
-滕思洁| 队员 | [yunmoxyz](https://github.com/yunmoxyz)  
-赵皓宇| 队员 | [PB15111605](https://github.com/PB15111605)
+| 姓名   | 身份   | github用户名                                |
+| ---- | ---- | ---------------------------------------- |
+| 戢凯文  | 队长   | [jikaiwen](https://github.com/jikaiwen)  |
+| 滕思洁  | 队员   | [yunmoxyz](https://github.com/yunmoxyz)  |
+| 赵皓宇  | 队员   | [PB15111605](https://github.com/PB15111605) |
 
 
 项目链接：
@@ -27,18 +27,25 @@ Traits是一种语言特征，表示一组方法可以用于扩展一个类的�
 - 与Mixin对比
 - 接口：目前整理了再python，c++,php这3种语言中的特性和用法
 - demo：给出了一些traits用法的示例代码
+- 增加了对c++type_traits.h中代码的分析
+- 阅读了部分python traits的代码实现
 
 还在进行的：
 - 和stl的关系（在整理）
+- python trait代码的分析
+- c++的代码分析
 
 
 具体进展可见项目链接。
 
 ### 遇到的问题：
 
-traits和c++ stl是否有关联？
+* traits和c++ stl是否有关联？
 
 我们感觉traits和c++ stl有所关联，但是在网上没有找到相关资料，目前有了一些进展正在整理。
+
+* python trait的代码量过大，同时网上没有相应的代码分析资料，看得进度极慢且没有头绪
+* 缺少有关php的trait资料
 
 ### 成员的讨论方式和时长：
 
