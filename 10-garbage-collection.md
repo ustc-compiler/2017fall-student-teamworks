@@ -101,7 +101,8 @@ JVM的GC源码深入调研可行，决定进一步阅读，并深入理解；
 **任务和分工**  
 
 用C语言实现了简单的garbage collector。阅读完JVM的shared和Serial GC模块。根据组间交流，完善了之前工作的不足，调研了concurrent GC， parallel GC。
-齐炜祯：[C语言Garbage Collector的源代码分析](https://github.com/USTC-Compiler-H-Team-10/teamwork/blob/master/gcForC.md)  、[GC复制算法C语言实现](https://github.com/USTC-Compiler-H-Team-10/teamwork/tree/master/gcForC/copying)、[GC标记-清除算法C语言实现](https://github.com/USTC-Compiler-H-Team-10/teamwork/tree/master/gcForC/markAndSweep)，写好自己之前工作的PPT
+
+齐炜祯：[C语言Garbage Collector的源代码分析](https://github.com/USTC-Compiler-H-Team-10/teamwork/blob/master/gcForC.md)  、[尝试用C语言实现GC复制算法](https://github.com/USTC-Compiler-H-Team-10/teamwork/tree/master/gcForC/copying)、[尝试用C语言实现GC标记-清除算法](https://github.com/USTC-Compiler-H-Team-10/teamwork/tree/master/gcForC/markAndSweep)，写好自己之前工作的PPT
 黄一凡：[concurrent_GC and parallel GC](https://github.com/USTC-Compiler-H-Team-10/teamwork/blob/master/concurrent_parallel%20GC)  ，完善之前工作的不足，汇总PPT
 金泽文：[JVM中GC机制的实现](https://github.com/USTC-Compiler-H-Team-10/teamwork/blob/master/notes_for_JVM.md)，写好自己之前工作的PPT
 
@@ -125,7 +126,7 @@ QQ群：30分钟
 
 **进展记录及问题**
 
-第三阶段的调研任务基本完成。用C语言实现了Garbage Collector（实现了GC复制算法和标记-清除算法），基本阅读完了JVM的GC部分，将理解记录在笔记里。通过组织间交流，完善了之前工作的一些不足，加深了对我们工作的理解。继续调研了concurrent GC， parallel GC。
+第三阶段的调研任务基本完成。详细分析开源C语言GC项目，尝试用C语言实现Garbage Collector（GC复制算法和标记-清除算法），基本阅读完了JVM的GC部分，将理解记录在笔记里。通过组织间交流，完善了之前工作的一些不足，加深了对我们工作的理解。继续调研了concurrent GC， parallel GC。
 在用C语言实现Garbage Collector时遇到了一些问题，记录在[文档](https://github.com/USTC-Compiler-H-Team-10/teamwork/blob/master/gcForC.md)中。
 
 之前的遇到的问题基本解决，并且完成了之前的计划。
