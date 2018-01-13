@@ -5,11 +5,11 @@
 git@github.com:USTC-Compiler-H-Team-10/teamwork.git
 
 ### 2. 成员信息
- | job  |  name  |    GitHub      |
- | ---- | ------ | -------------- |
- | 队长 | 齐炜祯 |[ qiweizhen](https://github.com/qiweizhen)      |
- | 成员 | 黄一凡 | [GhostScreaming](https://github.com/GhostScreaming) | 
- | 成员 | 金泽文 | [leo2589](https://github.com/leo2589)        |
+| job  | name | GitHub                                   |
+| ---- | ---- | ---------------------------------------- |
+| 队长   | 齐炜祯  | [ qiweizhen](https://github.com/qiweizhen) |
+| 成员   | 黄一凡  | [GhostScreaming](https://github.com/GhostScreaming) |
+| 成员   | 金泽文  | [leo2589](https://github.com/leo2589)    |
 
 ### 3. 项目简介
 本组研究的课题为“Java Garbage Collection 与各种GC算法”。
@@ -24,7 +24,7 @@ WikiPedia 对 Garbage Collection 的定义如下:
 具体实现GC时，为了提升回收效率，还有**分代垃圾回收算法**——给每个对象记录年龄，优先回收容易成为垃圾的对象；**增量式垃圾回收算法**——通过逐渐推进垃圾回收来控制mutator最大暂停时间。
 
 本次项目，我们准备了解探究GC的经典算法，每个算法实现一些实例，最后调研java语言中GC的具体实现策略。
- 
+
 ### 4. 12月23日提交
 **任务和分工**  
 
@@ -58,7 +58,7 @@ QQ群: 40分钟
 2. 如果有可能，在探索JVM后，确定造JVM的小轮子或者改写or实现JVM中GC部分的难度和可行性。
 3. 探索现在最前沿的GC算法，阅读新发表的论文。
 4. 对C语言的malloc函数进行封装，并实现GC函数，为C语言提供垃圾回收机制。  
-**后面的任务将会探索以上四个方向，并选择最合适的方向进行。**
+  **后面的任务将会探索以上四个方向，并选择最合适的方向进行。**
 
 
 ### 5. 1月3日提交
@@ -96,6 +96,46 @@ JVM的GC源码深入调研可行，决定进一步阅读，并深入理解；
 2. 通过进一步调研C语言垃圾回收的开源项目，对C语言独立实现垃圾回收机制。目标：实现C语言的简单garbage collector。
 
 
+### 6. 1月13日提交
+
+**任务和分工**  
+
+详细分析C语言开源项目，尝试用C语言实现简单的garbage collector。阅读完JVM的shared和Serial GC模块。根据组间交流，完善了之前工作的不足，调研了Java9 GC的新特性。
+
+齐炜祯：[C语言Garbage Collector的源代码分析](https://github.com/USTC-Compiler-H-Team-10/teamwork/blob/master/gcForC.md)  、[尝试用C语言实现GC复制算法](https://github.com/USTC-Compiler-H-Team-10/teamwork/tree/master/gcForC/copying)、[尝试用C语言实现GC标记-清除算法](https://github.com/USTC-Compiler-H-Team-10/teamwork/tree/master/gcForC/markAndSweep)，写好自己之前工作的PPT
+
+黄一凡：[Java9 GC机制的新特性](https://github.com/USTC-Compiler-H-Team-10/teamwork/blob/master/Search)，完善之前工作的不足，汇总PPT
+
+金泽文：[HotSpot-jdk9的GC源码分析](https://github.com/USTC-Compiler-H-Team-10/teamwork/blob/master/notes_for_JVM.md)，写好自己之前工作的PPT
+
+**讨论记录**
+
+**1.12**
+
+组间交流：30分钟（QQ群）
+
+QQ群：30分钟
+
+两个组交流了各自工作进展，提出了对彼此工作的建议（记录在issue中）。组内交流了各自的进展，根据组间交流内容，完善了先前工作的不足
+
+**1.13**
+
+组间交流：60分钟（QQ群）+图书馆四楼讨论区：30分钟
+
+汇报了每个人工作的成果，讨论了presentation的汇报内容。
+
+
+
+**进展记录及问题**
+
+第三阶段的调研任务基本完成。详细分析开源C语言GC项目，尝试用C语言实现Garbage Collector（GC复制算法和标记-清除算法），基本阅读完了HotSpot-jdk9的GC部分，将理解记录在笔记里。通过组织间交流，完善了之前工作的一些不足，加深了对我们工作的理解。调研了java9 GC的新特性，为什么用G1替代CMS。
+
+在用C语言实现Garbage Collector时遇到了一些问题，记录在[文档](https://github.com/USTC-Compiler-H-Team-10/teamwork/blob/master/gcForC.md)中。
+
+之前的遇到的问题基本解决，并且完成了之前的计划。
+
+
+
 **文献及引用和参考链接**  
 
 [《垃圾回收的算法与实现》 【日】 中村成洋 相川光](https://www.amazon.cn/dp/B01JZS0AO8 )  
@@ -115,3 +155,22 @@ JVM的GC源码深入调研可行，决定进一步阅读，并深入理解；
 [What’s the difference between concurrency and parallelism](http://joearms.github.io/2013/04/05/concurrent-and-parallel-programming.html)
 
 [Getting Started with the G1 Garbage Collector](http://www.oracle.com/webfolder/technetwork/tutorials/obe/java/G1GettingStarted/index.html)，[翻译文章](http://blog.csdn.net/renfufei/article/details/41897113)
+
+[Java垃圾回收的介绍](https://javapapers.com/java/java-garbage-collection-introduction/)    
+
+[Java垃圾回收的工作机制](https://javapapers.com/java/how-java-garbage-collection-works/)
+
+[Java垃圾回收的类型](https://javapapers.com/java/types-of-java-garbage-collectors/)  
+
+[Java垃圾回收的监测与分析](https://javapapers.com/java/java-garbage-collection-monitoring-and-analysis/)  
+
+[Visualvm-可视化VM](https://docs.oracle.com/javase/8/docs/technotes/guides/visualvm/)  
+
+[HotSpot实战](https://book.douban.com/subject/25847620/)  
+
+[Java堆的创建](http://www.importnew.com/17068.html)   
+
+[从持久代到metaspace](https://juejin.im/post/59e969ca51882561a05a3340)  
+
+[metaspace in java8](http://java-latte.blogspot.sg/2014/03/metaspace-in-java-8.html)  
+
