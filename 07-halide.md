@@ -2,11 +2,11 @@
 
 ## 组员
 
-| Name | 身份 |  GitHub ID  |
-| :--: | :---------: | :--: | 
-| 张航凯 | 队长 |   [Catkins](https://github.com/Caktins)   | 
-|  汪超  | 队员 |   [ChaoWao](https://github.com/ChaoWao)   |
-| 阮超逸 | 队员 | [Christianyi](https://github.com/Christianyi) |
+| Name |  身份  |                GitHub ID                 |
+| :--: | :--: | :--------------------------------------: |
+| 张航凯  |  队长  |  [Catkins](https://github.com/Caktins)   |
+|  汪超  |  队员  |  [ChaoWao](https://github.com/ChaoWao)   |
+| 阮超逸  |  队员  | [Christianyi](https://github.com/Christianyi) |
 
 ## 简介
 
@@ -59,6 +59,23 @@
 ### 下一步计划
 * 论文交流，深入探讨halide内部机制及特性
 * 着手开始构建自己的halide应用或者内部算法优化。
+
+
+
+## 1.13 提交内容
+
+### 任务分工
+
+我与汪超负责demo例子编写，展示halide用于图像处理例子；张航凯负责汇报总结部分
+
+### 进展
+
+* 了解halide语言特性
+* 了解halide工作模式
+
+### 成员讨论方式
+
+线下开会讨论，交流文章。
 
 ### 参考文献
 
