@@ -57,6 +57,26 @@ Though `Python` itself already has some properties of Prototypal Inheritance(e.g
   
     nvagus reorganized the structure of this project.
 
+- By Jan 13rd, 2018
+
+  Discussion at Library in West Campus for 1 hour.
+
+  Discussion on QQ for all day.
+
+  * Documents:
+
+    The report for this project has been published in [document repository](https://github.com/compiler-teamwork-group09/documents). [songchaow]
+
+  * [**python3-proto**](https://github.com/compiler-teamwork-group09/python3-proto) project:
+    
+    The [README.md](https://github.com/compiler-teamwork-group09/documents/blob/master/README.md) has been added. [nvagus]]
+
+    Lots of comments has been added to python codes. [nvagus]
+  * PPT for report
+  
+    The PDF version of PPT for report has been added. [Smart-Hypercube]
+
+
 
 ## To-do List
 - Continue to read the paper, *Classifying Prototype-based Programming Language*, study several programming languages the paper has mentioned, and finally sort out how prototype-based languages are influenced by other languages before. [songchaow]
