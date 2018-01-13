@@ -55,6 +55,19 @@ Macrofication灵活性好，可扩展性强，在这里我们将深入研究其�
 ### 下一步计划
 继续调研与Macrofication类似的工作以及实现技术，并准备总结工作。
 
+## 1.13 commit
+### 项目分工
+对于本次的总结工作，队长余浩负责示例代码的编写，周祺负责PPT制作，李强负责继续调研相关工作中模式匹配的合一算法。
+### 成果
+总结工作已经完成，各队员的工作及链接列表如下：
+
+|负责人     |           名称   		      |github位置                                                                                                               |
+|:--------:|:---------------------------:|:-----------------------------------------------------------------------------------------------------------------------:|
+|余浩       |test cases                  |[文件夹](https://github.com/ustc-compiler-macrofication/macrofication/tree/master/test_cases)             |
+|周祺       |11-macrofication.pptx       |[位置](https://github.com/ustc-compiler-macrofication/macrofication/blob/master/11-macrofication.pptx) |
+|李强       |Unification Algorithm       |[文档](https://github.com/ustc-compiler-macrofication/macrofication/blob/master/docs/Related_Work_Pattern_Matching/Unification_Algorithm.md)|
+
+
 ## Links
 [Macrofication](https://users.soe.ucsc.edu/~cormac/papers/16esop.pdf) 
 
